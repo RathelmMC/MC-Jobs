@@ -1,0 +1,48 @@
+max_pay: -1
+percent_cost: 95
+show_pay: true
+
+timers:
+    time_interval: 60
+    rejoin_interval: 360
+    player_save: 15
+    show_interval: 5
+    delete_cache: 180
+
+max_jobs:
+    default: 4
+    Members: 5
+    Admins:  6
+
+ranks:
+    novice:         1
+    apprentice:    10
+    trained:       20
+    professional:  50
+    veteran:      100
+    expert:       250
+    master:       500
+    grandmaster: 1000
+
+backend:
+    type: file
+    user: user
+    pass: password
+    database: sql
+    host: localhost
+    port: 3306
+
+advanced:
+    language: english
+    usePerms: false
+    multiWorld: false
+    payment_type: money
+    payment_mod: vault
+    log_mod: none
+    pay_scale: 1
+    xp_modifier: 10
+    pay_spawners: false
+    spawn_distance: 8
+    nopitch: false
+    prune: false
+    version: 3100

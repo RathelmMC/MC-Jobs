@@ -1,0 +1,670 @@
+# 
+# End of File
+
+jobscommand:
+  playeronly: 'Kan bara göras av en spelare!'
+  permission: '&6%p&c Du har inte behörighet att göra det!'
+  args: '&6%p&c you gave too many arguments!'
+  exist: '&cJobbet &6%j&c existerar inte!'
+  rejoin: '&7Du kan nu återigen joina &6%j&7 jobbet.'
+  show: '&aVisar&7 nu betalningar för &6%j&7 jobbet.'
+  hide: '&Visar inte&7 betalningar för &6%j&7 jobbet.'
+jobsnotify:
+  and: och
+  hours: timmar
+  hour: timme
+  minutes: minuter
+  minute: minut
+  days: dagar
+  day: dag
+  weeks: veckor
+  week: vecka
+  months: månader
+  month: månad
+  message: '&aDitt &6MC Jobb&a har gett dig &6%j&a under de senaste &c%g&a.'
+  overpay: '&e%p&a, du är helt utmattad och kan inte tjäna mer från &6MC Jobbs&a ett tag.'
+jobsdisplay:
+  employed: --   &cAnställd
+  unemployed: -- &9Ledigt
+  default: --    &3Obligatoriskt
+  basepay: Grund Lön
+  charge: DEBITERA
+  pay: LÖN
+  level: LEVEL
+  rank: RANK
+  exp: XP
+  break: BRYTA
+  place: PLACERA
+  defeat: BESEGRA
+  fishing: FISKA
+  craft: TILLVERKA
+  repair: REPARERA
+  enchant: ENCHANTA
+  potions: DRYCKER
+  tier: NIVÅ
+jobsjoin:
+  have: Du har redan jobbet &6%j&c!
+  join: '%p har joinat &9%j&7.'
+  toomany: '&6%p&c du har för många jobb.  För att joina ett nytt jobb:'
+  command: /jobs leave [jobb]
+  jobperm: '&6%p&7 Du har inte behörighet till att joina &9%j&7'
+  timer: '&7Du måste vänta ytterligare &c%g&7 innan du kan joina &6%j&7.'
+jobsleave:
+  quit: Du har slutat som &6%j&7.
+  donthave: Du har inte &6%j&c jobbet.
+  leavedefault: Du kan inte lämna &6%j&c eftersom det är ett obligatoriskt jobb.
+jobslist:
+  available: '&e%p&2, lediga jobb är:'
+  jobsin: Jobb som är &cröda&2 har du redan.
+  nojob: Jobb som är &8mörk gråa&2 är otillgänliga för dig.
+  defaultjob: Jobb som är &3mörk aqua&2 är obligatoriska jobb.
+  specific: 'För att lära dig mer om ett jobb skriv: &e/jobs [jobb namn]'
+  jobs: 'JOBB:'
+jobshelp:
+  page: SIDA
+  '1':
+    line1: '&7   Välkommen till &3MC Jobb&7.  &3MC Jobb&7 är en mod som tillåter dig'
+    line2: '&7att tjäna pengar genom att göra olika sortes jobb beroende på'
+    line3: '&7vilket jobb du väljer.'
+    line4: ''
+    line5: '&2   Först och främst måste du välja ett jobb.  Du kan hitta'
+    line6: '&2vilka jobb som är tillgänliga för dig genom att skriva &e/jobs list.'
+    line7: ''
+    line8: '&2För att får mer info om ett job skriver du:'
+    line9: '&e/jobs [jobb namn]'
+    line10: ''
+    line11: '&e[jobb namn] &2kan vara vilket jobb som helst, till exempel &6grävare&2.'
+    line12: '&e/jobs join &2och&e leave &2förklaras på nästa sida'
+  '2':
+    line1: '&2Du kan skaffa dig ett jobb genom att skriva:'
+    line2: '&e/jobs join [jobb namn]'
+    line3: ''
+    line4: '&2Joining a job will allow you to earn and lose money based upon'
+    line4: '&2Att skaffa dig ett jobb tillåter dig att tjäna och förlora pengar baserat på'
+    line5: '&2lönetabellerna för varje jobb. Du kan endast ha ett'
+    line6: '&2maximum av &c%j&2 jobb åt gången.'
+    line7: ''
+    line8: '&2Du kan lämna ett jobb genom att skriva &e/jobs leave [jobb namn]'
+    line9: '&2När du har nått gränsen för max antal jobb kan du inte skaffa dig nya,'
+    line10: '&2förrän du har lämnat något av dina gamla jobb.'
+    line11: ''
+    line12: '&2För att lära dig mer om &e/jobs list&2 gå till nästa sida.'
+  '3':
+    line1: '&2   List kommandot ger dig en snabb överblick och'
+    line2: '&2information om vilka jobb du kan skaffa och vilka jobb'
+    line3: '&2du inte kan skaffa.'
+    line4: ''
+    line5: '&2Jobb som du redan har är markerade med &crött&2. '
+    line6: '&2Jobb som du kan skaffa är markerade med &6guld&2.'
+    line7: 'Jobb som är otillgängliga för dig är markerade med &8dark grey&2.'
+    line8: ''
+    line9: '&2Standard jobb är markerade med &3mörk aqua&2. Det är jobb som'
+    line10: '&2alla spelare har som standard på servern. Endast moderatorer kan'
+    line11: '&2kan lämna standard jobb.'
+    line12: ''
+    line13: '&2Fortsätt på nästa sida för mer info om &elist&2 kommandot.'
+  '4':
+    line1: '&2List kommandot visar och hur många jobb du har gentemot maxantalet'
+    line2: '&2som är tillåtet på servern, vilket är &c%j&2.'
+    line3: ''
+    line4: '&2  &e/jobs leave&2 kommandot funkar precis som &ejoin'
+    line5: '&2kommandot. Du kan endas lämna jobb som du redan har'
+    line6: '&2skaffat. Detta tillåter dig att skaffa nya jobb om du ändrar'
+    line7: '&2dig och vill byta jobb.'
+    line8: ''
+    line9: '&2När du väl har lämnat ett jobb måste du vänta'
+    line10: '&21 timma innan du kan skaffa samma jobb igen.'
+    line11: ''
+    line12: '&2För mer information om &e/jobs [job name] fortsätt till nästa sida'
+  '5':
+    line1: '&2  &e/jobs [job name]&2 kommandot ger spelaren all'
+    line2: '&2information om ett jobb de behöver.'
+    line3: ''
+    line4: '&2Första raden börjar med &3jobb namnet&2 och följs av'
+    line5: '&2om du är &canställd&2 på jobbet eller inte. Om du inte är'
+    line6: '&2anställd står det isåfall &9Ledigt&2.'
+    line7: '&2Nästa rad visar &agrund lönen&2 av det jobbet. Detta nummer är'
+    line8: '&2hur mycket pengar eller XP &6TIER1&2 betalar dig för att du gör en &euppgift&2.'
+    line9: '&2Sista raden är hur mycket jobbet &abetalar&2 eller &cdebiterar&2 från dig för att du jobbar.'
+    line10: ''
+    line11: '&2Nästa sida förklarar de senare raderna av &e/jobs [jobb namn]'
+  '6':
+    line1: '&2Som sagt innan så kan ett jobb både &abetala&2 och &cdebitera&2 en spelare. Som ett'
+    line2: '&2exempel, &6gruvarbetare&2 jobbet &abetalar&2 spelaren för att ha sönder &7järn malm&2.'
+    line3: '&2Men om du placerar ett block av &7järn malm&2 kommer du blir &cdebiterad&2 pengar istället.'
+    line4: ''
+    line5: '&2Om du är &canställd&2 på jobbet så visar den dig'
+    line6: '&2din nuvarande &6level&2 och &6rank&2 i ditt jobb.'
+    line7: '&2Andra raden är en &6beskrivning&2 av ditt jobb.'
+    line8: ''
+    line9: '&2Efter strecken visar den vad varje &euppgift&2 är och vilket block'
+    line10: '&2eller enheter är använt av jobbet.'
+    line11: ''
+    line12: '&2Nästa sida kommer förklara jobbens &euppgifter&2.'
+  '7':
+    line1: '&2Uppgifterna är: &6TA SÖNDER&2, &6PLACERA&2, &6BESEGRA&2, &6SMIDA&2, &6REPARERA&2,'
+    line2: '&6FISKA&2, &6BRYGGA&2, and &6FÖRTROLLNINGAR&2.'
+    line3: ''
+    line4: '&6TA SÖNDER&2: Är uppgiften att ta sönder ett block som t.ex &7jord&2.'
+    line5: '&6PLACERA&2: Är uppgiften att placera ett block som t.ex &7stentrappa&2.'
+    line6: '&6BESEGRA&2: Är uppgiften att döda monster som t.ex &7spindlar&2.'
+    line7: '&6SMIDA&2: Är uppgiften att smida vapen som t.ex &7träsvärd&2.'
+    line8: '&6REPARERA&2: Är uppften att reparera saker som t.ex&7stenspade&2.'
+    line9: '&6FISKA&2: &aBetalar&2 eller &cdebiterar&2 när du försöker fånga en'
+    line10: '&2fisk eller objekt.'
+    line11: '&6Brygder&2 och &6Enchants&2 finns det info om på nästa sida.'
+  '8':
+    line1: '&6BRYGDER&2: &aBetalar&2 eller &cdebiterar&2 när du använder brygdstället'
+    line2: '&2för att göra brygder.'
+    line3: '&6FÖRTROLLNINGAR&2: &aBetalar&2 eller &cdebiterar&2 när en spelare förtrollar ett objekt.'
+    line4: ''
+    line5: '&7Vill du läsa mer om MCJobs?'
+    line6: '&6http://dev.bukkit.org/server-mods/mcjobs/'
+  endofpage: '&7Fortsätt på sida %g'
+  command: '&6/jobs help %g'
+  finish: '&7SLUT PÅ HJÄLP SIDA'
+  nohelp: '&7%g&c är inte en hjälp sida!'
+admincommand:
+  permission: '&6%p&c du har inte tillgång till det kommandot!'
+  failedreload: '&cKunde inte ladda om pluginet!'
+  succeedreload: '&6MC Jobs&c är omladdat!'
+  defaults: '&7Standard inställningar är nu i config.yml.'
+  args: '&cToo many arguments for &e/jadm&c.  So this is the end, we''re going to
+    test a ridiculously long string.'
+  exist: '&6%j&c does not exist!'
+adminadd:
+  args: '&cWrong arguments:  &e/jadm add [player/group] [job_name]'
+  offline: '&6%p&c group doesn''t exist or isn''t a player that has been seen!'
+  novault: '&6%p&c is not a known player!'
+  hasjob: '&6%p&7 already has the &9%j&7 job.'
+  empty: '&7There are no &eplayers&7 online in the &6%p&7 group.'
+  added: '&6%p&7 has been added to &9%j&7.'
+  padded: '&6%p&2 you have been added to the &9%j&2 job by a server admin.'
+adminremove:
+  args: '&cWrong arguments:  &e/jadm remove [player/group] [job_name]'
+  nojob: '&6%p&7 does not have the &9%j&7 job.'
+  nodefault: '&6%p&c you do not have permission to remove &3default&c jobs!'
+  removed: '&6%p&7 has been removed from &9%j&7.'
+  premoved: '&6%p&2 you have been removed from the &9%j&2 job by a server admin.'
+adminlist:
+  args: '&cWrong arguments:  &e/jadm list [player/group]'
+  playerlist: '&2%p&7: %g'
+  nojobs: '&2%p&c has no jobs.'
+  wrongpage: '&e%g is not a proper page number.  Using page 1 instead.'
+pitch:
+  line0: 'Denna server kör:'
+  line1: '&aFör att se vilka jobb som är tillgängliga skriv: &e/jobs list'
+  line2: '&aFör att joina ett jobb skriv: &e/jobs join [jobb namn]'
+  line3: '&aSpela, &2tjäna pengar&a, och ha kul!'
+onadminlogin:
+  toolow: '&eYour pay scale is too low for an &6XP&e based economy.  Consider switching
+    &2pay_scale&e to high in the config.yml file.'
+  outofdate: '&eConfig.yml is out of date.  &6MC Jobs&e may not work properly without
+    reloading the config file.'
+experience:
+  level: '&eDu har gått upp en level i &6%j&e.'
+  reset: '&eDin level i &6%j&e har blivit återställd till &c0&e.'
+  rank: '&eYou are now rank &6%g&e in &6%j&e.'
+  added_lvl: "&7You have given &6%p &a%g&7 levels in &6%j&7."
+  padded_lvl: "&7You have been given &a%g&7 levels in &6%j&7 by a system admin."
+  added_xp: "&7You have given &6%p &a%g&7 experience in &6%j&7."
+  padded_xp: "&7You have been given &a%g&7 experience in &6%j&7 by a system admin."
+  nojob: "&6%p&c doesn't have the &6%j&c job."
+  
+payment:
+  pay: '&6%j&a jobbet har betalat dig &6%g&a %p.'
+  payxp: '&6%j&a jobbet har givit dig &6%g&a XP.'
+  charge: '&6%j&a jobbet har kostat dig &c%g&a %p.'
+  chargexp: '&6%j&a jobbet har tagit &c%g&a XP från dig.'
+  currency_single: krona
+  currency_plural: kronor
+spaces:
+  jobslist: 16
+  display: 4
+  displaytwo: 14
+  displaythree: 9
+  chargelen: 7
+  numhelp: 8
+entities:
+  blaze: Blaze
+  cow: Cow
+  cave_spider: Cave Spider
+  chicken: Chicken
+  creeper: Creeper
+  dropped_item: Fish
+  ender_dragon: Ender Dragon
+  enderman: Ender Man
+  ghast: Ghast
+  giant: Giant
+  iron_golem: Iron Golem
+  magma_cube: Magma Cube
+  mushroom_cow: Mooshroom Cow
+  npc: NPC
+  ocelot: Ocelot
+  pig: Pig
+  pig_zombie: Pig Zombie
+  player: Player
+  sheep: Sheep
+  silverfish: Silverfish
+  skeleton: Skeleton
+  slime: Slime
+  snowman: Snowman
+  spider: Spider
+  squid: Squid
+  wolf: Wolf
+  zombie: Zombie
+potions:
+  water: Water
+  awkward: Awkward
+  thick: Thick
+  mundane: Mundane
+  mundane_ext: Mundane Extend
+  regen: Regen
+  regen_ext: Regen Extend
+  regen_two: Regen II
+  regen_two_ext: Regen II Extend
+  regen_spl: Regen Splash
+  regen_ext_spl: Regen Extend Splash
+  regen_two_spl: Regen II Splash
+  swift: Swift
+  swift_ext: Swift Extend
+  swift_two: Swift II
+  swift_two_ext: Swift II Extend
+  swift_spl: Swift Splash
+  swift_ext_spl: Swift Extend Splash
+  swift_two_spl: Swift II Splash
+  fire_res: Fire Resist
+  fire_res_ext: Fire Resist Extend
+  fire_res_spl: Fire Resist Splash
+  fire_res_ext_spl: Fire Resist Extend Splash
+  poison: Poison
+  poison_ext: Poison Extend
+  poison_two: Poison II
+  poison_two_ext: Poison II Extend
+  poison_spl: Poison Splash
+  poison_ext_spl: Poison Extend Splash
+  poison_two_spl: Poison II Splash
+  health: Healing
+  health_two: Healing II
+  health_spl: Healing Splash
+  health_two_spl: Healing II Splash
+  weak: Weak
+  weak_ext: Weak Extend
+  weak_two: Weak II
+  weak_spl: Weak Splash
+  weak_ext_spl: Weak Extend Splash
+  weak_two_spl: Weak II Splash
+  strength: Strength
+  strength_ext: Strength Extend
+  strength_two: Strength II
+  strength_two_ext: Strength II Extend
+  strength_spl: Strength Splash
+  strength_ext_spl: Strength Extend Splash
+  strength_two_spl: Strength II Splash
+  slow: Slow
+  slow_ext: Slow Extend
+  slow_two: Slow II
+  slow_spl: Slow Splash
+  slow_ext_spl: Slow Extend Splash
+  slow_two_spl: Slow II Splash
+  harm: Harm
+  harm_two: Harm II
+  harm_spl: Harm Splash
+  harm_two_spl: Harm II Splash
+  rev_fire_res: Fire Resist
+  rev_slow: Slow
+  rev_health: Healing
+  rev_harm: Harm
+  rev_weak: Weak
+enchant:
+  arrow_dmg_1: Arrow Damage I
+  arrow_dmg_2: Arrow Damage II
+  arrow_dmg_3: Arrow Damage III
+  arrow_dmg_4: Arrow Damage IV
+  arrow_dmg_5: Arrow Damage V
+  arrow_fire: Flame Arrows
+  arrow_inf: Infinite Arrows
+  arrow_knock_1: Arrow Knockback I
+  arrow_knock_2: Arrow Knockback II
+  sharp_1: Sharpness I
+  sharp_2: Sharpness II
+  sharp_3: Sharpness III
+  sharp_4: Sharpness IV
+  sharp_5: Sharpness V
+  boa_1: Bane of Anthropods I
+  boa_2: Bane of Anthropods II
+  boa_3: Bane of Anthropods III
+  boa_4: Bane of Anthropods IV
+  boa_5: Bane of Anthropods V
+  dmg_undead_1: Smite I
+  dmg_undead_2: Smite II
+  dmg_undead_3: Smite III
+  dmg_undead_4: Smite IV
+  dmg_undead_5: Smite V
+  efficiency_1: Efficiency I
+  efficiency_2: Efficiency II
+  efficiency_3: Efficiency III
+  efficiency_4: Efficiency IV
+  efficiency_5: Efficiency V
+  unbreaking_1: Durability I
+  unbreaking_2: Durability II
+  unbreaking_3: Durability III
+  unbreaking_4: Durability IV
+  unbreaking_5: Durability V
+  fire_aspect_1: Fire Aspect I
+  fire_aspect_2: Fire Aspect II
+  knockback_1: Knockback I
+  knockback_2: Knockback II
+  fortune_1: Fortune I
+  fortune_2: Fortune II
+  fortune_3: Fortune III
+  looting_1: Looting I
+  looting_2: Looting II
+  looting_3: Looting III
+  respiration_1: Respiration I
+  respiration_2: Respiration II
+  respiration_3: Respiration III
+  protection_1: Protection I
+  protection_2: Protection II
+  protection_3: Protection III
+  protection_4: Protection IV
+  blast_prot_1: Blast Protection I
+  blast_prot_2: Blast Protection II
+  blast_prot_3: Blast Protection III
+  blast_prot_4: Blast Protection IV
+  feather_fall_1: Feather Fall I
+  feather_fall_2: Feather Fall II
+  feather_fall_3: Feather Fall III
+  feather_fall_4: Feather Fall IV
+  fire_prot_1: Fire Protection I
+  fire_prot_2: Fire Protection II
+  fire_prot_3: Fire Protection III
+  fire_prot_4: Fire Protection IV
+  proj_prot_1: Projectile Protection I
+  proj_prot_2: Projectile Protection II
+  proj_prot_3: Projectile Protection III
+  proj_prot_4: Projectile Protection IV
+  silk_touch: Silk Touch
+  aqua_affinity: Aqua Affinity
+materials:
+  air: Air
+  apple: Apple
+  arrow: Arrow
+  bed: Bed
+  bed_block: Bed
+  bedrock: Bedrock
+  blaze_powder: Blaze Powder
+  blaze_rod: Blaze Rod
+  boat: Boat
+  bone: Bone
+  book: Book
+  bookshelf: Bookshelf
+  bow: Bow
+  bowl: Bowl
+  bread: Bread
+  brewing_stand: Brewing Stand
+  brewing_stand_item: Brewing Stand
+  brick: Brick
+  brick_stairs: Brick Stairs
+  brown_mushroom: Brown Mushroom
+  bucket: Iron Bucket
+  burning_furnace: Furnace
+  cactus: Cactus
+  cake: Cake
+  cake_block: Cake
+  cauldron: Cauldron
+  cauldron_item: Cauldron
+  chainmail_boots: Chainmail Boots
+  chainmail_chestplate: Chainmail Tunic
+  chainmail_helmet: Chainmail Coif
+  chainmail_leggings: Chainmail Leggings
+  chest: Chest
+  clay: Clay
+  clay_ball: Clay Ball
+  clay_brick: Clay Brick
+  coal: Coal
+  coal_ore: Coal Ore
+  cobblestone: Cobblestone
+  cobblestone_stairs: Cobblestone Stairs
+  compass: Compass
+  cooked_beef: Steak
+  cooked_chicken: Grilled Chicken
+  cooked_fish: Fried Fish
+  cookie: Cookie
+  crops: Crops
+  dead_bush: Dead Bush
+  detector_rail: Detector Rail
+  diamond: Diamond
+  diamond_axe: Diamond Axe
+  diamond_block: Block of Diamond
+  diamond_boots: Diamond Greaves
+  diamond_chestplate: Diamond Chestpiece
+  diamond_helmet: Diamond Helm
+  diamond_hoe: Diamond Hoe
+  diamond_leggings: Diamond Legs
+  diamond_ore: Rough Diamond
+  diamond_pickaxe: Diamond Pickaxe
+  diamond_spade: Diamond Shovel
+  diamond_sword: Diamond Sword
+  diode: Redstone Repeater
+  diode_block_off: Redstone Repeater
+  diode_block_on: Redstone Repeater
+  dirt: Dirt
+  dispenser: Dispenser
+  double_step: Double Step
+  dragon_egg: Dragon Egg
+  egg: Egg
+  enchantment_table: Enchantment Table
+  ender_pearl: Ender Pearl
+  ender_portal: Ender Portal
+  ender_portal_frame: Ender Portal Frame
+  ender_stone: Ender Stone
+  exp_bottle: Experience Bottle
+  eye_of_ender: Eye of Ender
+  feather: Feather
+  fence: Fence
+  fence_gate: Fence Gate
+  fermented_spider_eye: Fermented Spider Eye
+  fire: Fire
+  fireball: Fireball
+  fishing_rod: Fishing Pole
+  flint: Flint
+  flint_and_steel: Flint and Steel
+  furnace: Furnace
+  ghast_tear: Ghast Tear
+  glass: Glass
+  glass_bottle: Bottle
+  glowing_redstone_ore: Redstone Ore
+  glowstone: Glowstone
+  glowstone_dust: Glowstone Dust
+  gold_axe: Gold Axe
+  gold_block: Block of Gold
+  gold_boots: Gold Slippers
+  gold_chestplate: Gold Breastplate
+  gold_helmet: Gold Helm
+  gold_hoe: Gold Hoe
+  gold_ingot: Gold Ingot
+  gold_leggings: Gold Skirt
+  gold_nugget: Gold Nugget
+  gold_ore: Gold Ore
+  gold_pickaxe: Gold Pickaxe
+  gold_record: Record c418 - 13
+  gold_spade: Gold Shovel
+  gold_sword: Gold Sword
+  golden_apple: Golden Apple
+  grass: Dirt
+  gravel: Gravel
+  green_record: Record c418 - cat
+  grilled_pork: Baby Back Ribs
+  huge_mushroom_1: Giant Mushroom
+  huge_mushroom_2: Giant Mushroom
+  ice: Ice
+  ink_sack: Squid Ink
+  iron_axe: Iron Axe
+  iron_block: Block of Iron
+  iron_boots: Iron Greaves
+  iron_chestplate: Iron Chestplate
+  iron_door: Iron Door
+  iron_door_block: Iron Door
+  iron_fence: Iron Fence
+  iron_helmet: Iron Helm
+  iron_hoe: Iron Hoe
+  iron_ingot: Iron Ingot
+  iron_leggings: Iron Leggings
+  iron_ore: Iron Ore
+  iron_pickaxe: Iron Pickaxe
+  iron_spade: Iron Shovel
+  iron_sword: Iron Sword
+  jack_o_lantern: Jack O' Lantern
+  jukebox: Jukebox
+  ladder: Ladder
+  lapis_block: Block of Lapis
+  lapis_ore: Lapis Ore
+  lava: Lava
+  lava_bucket: Bucket Full of Lava
+  leather: Strip of Leather
+  leather_boots: Leather Shoes
+  leather_chestplate: Leather Vest
+  leather_helmet: Leather Cap
+  leather_leggings: Leather Pants
+  leaves: Leaves
+  lever: Lever
+  locked_chest: Locked Chest
+  log: Tree Log
+  long_grass: Weeds
+  magma_cream: Magma Cream
+  map: Map
+  melon: Watermelon Slice
+  melon_block: Watermelon
+  melon_seeds: Watermelon Seeds
+  melon_stem: Watermelon Plant
+  milk_bucket: Bucket Full of Milk
+  minecart: Minecart
+  mob_spawner: Mob Spawner
+  monster_egg: Monster Egg
+  monster_eggs: Silverfish Block
+  mossy_cobblestone: Mossy Cobblestone
+  mushroom_soup: Bowl of Mushroom Soup
+  mycel: Mycel
+  nether_brick: Nether Brick
+  nether_brick_stairs: Nether Brick Stairs
+  nether_fence: Nether Fence
+  nether_stalk: Nether Warts
+  nether_warts: Nether Warts
+  netherrack: Netherrack
+  note_block: Note Block
+  obsidian: Obsidian
+  painting: Painting
+  paper: Paper
+  piston_base: Piston
+  piston_extension: Piston
+  piston_moving_piece: Piston
+  piston_sticky_base: Sticky Piston
+  pork: Raw Pork
+  portal: Portal
+  potion: Potion
+  powered_minecart: Powered Minecart
+  powered_rail: Powered Rail
+  pumpkin: Pumpkin
+  pumpkin_seeds: Pumpkin Seeds
+  pumpkin_stem: Pumpkin Plant
+  rails: Train Tracks
+  raw_beef: Raw Steak
+  raw_chicken: Raw Chicken
+  raw_fish: Raw Fish
+  record_10: Record c418 - ward
+  record_11: Record c418 - 11
+  record_3: Record c418 - blocks
+  record_4: Record c418 - chirp
+  record_5: Record c418 - far
+  record_6: Record c418 - mall
+  record_7: Record c418 - mellohi
+  record_8: Record c418 - stal
+  record_9: Record c418 - strad
+  red_mushroom: Red Mushroom
+  red_rose: Red Rose
+  redstone: Redstone Dust
+  redstone_lamp_off: Redstone Lamp
+  redstone_lamp_on: Redstone Lamp
+  redstone_ore: Redstone Ore
+  redstone_torch_off: Redstone Torch
+  redstone_torch_on: Redstone Torch
+  redstone_wire: Redstone Dust
+  rotten_flesh: Zombie Flesh
+  saddle: Saddle
+  sand: Sand
+  sandstone: Sandstone Brick
+  sapling: Tree Sapling
+  seeds: Seeds
+  shears: Shears
+  sign: Wood Sign
+  sign_post: Wood Sign
+  slime_ball: Slime Ball
+  smooth_brick: Smooth Brick
+  smooth_stairs: Smooth Brick Stairs
+  snow: Snow
+  snow_ball: Snow Ball
+  snow_block: Snow Block
+  soil: Soil
+  soul_sand: Soul Sand
+  speckled_melon: Speckled Melon
+  spider_eye: Spider Eye
+  sponge: Sponge
+  stationary_lava: Lava
+  stationary_water: Water
+  step: Step
+  stick: Stick
+  stone: Stone
+  stone_axe: Stone Axe
+  stone_button: Stone Button
+  stone_hoe: Stone Hoe
+  stone_pickaxe: Stone Pickaxe
+  stone_plate: Stone Pressure Plate
+  stone_spade: Stone Shovel
+  stone_sword: Stone Sword
+  storage_minecart: Storage Minecart
+  string: String
+  sugar: Sugar
+  sugar_cane: Sugar Cane
+  sugar_cane_block: Sugar Cane
+  sulphur: Gunpowder
+  thin_glass: Glass Panes
+  tnt: TNT
+  torch: Torch
+  trap_door: Trap Door
+  vine: Vine
+  wall_sign: Wood Sign
+  watch: Watch
+  water: Water
+  water_bucket: Bucket Full of Water
+  water_lily: Water Lily
+  web: Web
+  wheat: Wheat
+  wood: Wood
+  wood_axe: Wood Axe
+  wood_door: Wooden Door
+  wood_hoe: Wood Hoe
+  wood_pickaxe: Wood Pickaxe
+  wood_plate: Wood Pressure Plate
+  wood_spade: Wood Shovel
+  wood_stairs: Wooden Stairs
+  wood_sword: Wood Sword
+  wooden_door: Wooden Door
+  wool: Wool
+  workbench: Workbench
+  yellow_flower: Yellow Flower
+  birch_wood_stairs:    Birch Wood Stairs
+  book_and_quill:       Book and Quill
+  cocoa:                Cocoa
+  emerald:              Emerald
+  emerald_block:        Block of Emerald
+  emerald_ore:          Emerald Ore
+  ender_chest:          Ender Chest
+  jungle_wood_stairs:   Jungle Wood Stairs
+  spruce_wood_stairs:   Spruce Wood Stairs
+  sandstone_stairs:     Sandstone Stairs
+  step:                 Step
+  tripwire:             Trip Wire
+  tripwire_hook:        Trip Wire Hook
+  written_book:         Written Book
+  

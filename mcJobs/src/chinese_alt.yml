@@ -1,0 +1,691 @@
+jobscommand:
+    playeronly: "只能被玩家使用!"
+    permission: "&6%p&c你没有权限进行此操作!"
+    args: "&6%p&c你给了太多的参数!"
+    exist: "&c此工作&6%j&c并不存在!"
+    rejoin: "&7你现在已可以重新加入&6%j&7工作了."
+    show: "&7Now &ashowing&7 pay messages for the &6%j&7 job."
+    hide: "&7Now &chiding&7 pay messages for the &6%j&7 job."
+
+jobsnotify:
+    and: 和
+    hours: 小时
+    hour: 小时
+    minutes: 分钟
+    minute: 分钟
+    days: 天
+    day: 天
+    weeks: 星期
+    week: 星期
+    months: 月
+    month: 月
+    message: "&a你因为&6MC职业&a在过去的&c%g&a里赚得了&6%j&a."
+    overpay: "&e%p&a, you are exhausted and cannot earn more from &6MC Jobs&a for awhile."
+
+jobsdisplay:
+    employed: "-- &c已参与"
+    unemployed: "-- &9未参与"
+    default: "-- &3默认"
+    basepay: 基本工资
+    charge: 费用
+    pay: 支付
+    level: 等级
+    rank: 排名
+    exp: 经验
+    break: 破坏
+    place: 放置
+    defeat: 击杀
+    fishing: 钓鱼
+    craft: 制作
+    repair: 修理
+    enchant: 附魔
+    potions: 制药
+    tier: 级别
+
+jobsjoin:
+    have: "你已经加入了&6%j&c!"
+    join: "%p加入&9%j&7."
+    toomany: "&6%p&c你已有太多的工作.  想要加入新的工作，你必须输入:"
+    command: "/jobs leave [职业]"
+    jobperm: "&6%p&7你没有权限加入&9%j&7"
+    timer: "&7在&c%g&7内你暂时不能加入&6%j."
+ 
+jobsleave:
+    quit: "&7你已经放弃了&6%j&7工作."
+    donthave: "&c你并未参与&6%j&c工作."
+    leavedefault: "&c你不能离开&6%j&c因为这是默认工作."
+
+jobslist:
+    available: "&e%p&2,当前可以参与的职业有:"
+    jobsin: "&c红色&2的职业是你已经就职的."
+    nojob: "&8深灰色&2的职业是你暂时不能参与的."
+    defaultjob: "&3深绿色&2的职业是默认职业."
+    specific: "想要了解特定职业的详情请输入如下指令: &e/jobs [职业名称]"    
+    jobs: "职业:"
+
+jobshelp:
+    page: PAGE
+    1:
+        line1: "&7欢迎使用&3MC职业&7. &3MC职业&7是让玩家能够在服务器上通过"
+        line2: "&7进行特定的活动来赚钱的一个趣味插件."
+        line3: ""
+        line4: "&2想要开始工作你需要先选择一个职业. 你能通过"
+        line5: "&2&e/jobs list&2命令来查询目前有哪些职业可以参与."
+        line6: ""
+        line7: "&2若需查询更多关于每种职业的信息请在对话框中输入:"
+        line8: "&2&e/jobs [职业名称]"
+        line9: ""
+        line10: "&2&e[职业名称]&2可以是任何职业名, 例如&6digger&2."
+        line11: "&2&e/jobs join &2和&e leave &2将在下一页进行解释."
+        line12: ""
+    2:
+        line1: "&2你可以通过输入下列命令来参与职业:"
+        line2: "&e/jobs join [职业名称]"
+        line3: ""
+        line4: "&2参与职业之后你可以在每项工作的基本工资基础上赚更"
+        line5: "&2多钱, 但是工作情况不佳的话也会失去钱. 你目前最多"
+        line6: "&2能在此服务器参与&c%j&2个工作."
+        line7: ""
+        line8: "&2你可以输入 &e/jobs leave [职业名称] 来退出工作."
+        line9: "&2一旦你的工作数量到了服务器允许的最大值之后, 想要"
+        line10: "&2参与新工作就只能离开现有的某个工作."
+        line11: ""
+        line12: "&2想要了解&e/jobs list&2请前往下一页."
+    3:
+        line1: "&2list命令会非常快速地列出目前能参与和不能参与的工"
+        line2: "&2作, 对玩家十分有用."
+        line3: ""
+        line4: "&2你现在已经加入的职业将会以&c红色&2显示. 你能加入的职"
+        line5: "业将会以&6金色&2显示. 目前不能参与的职业将会以&8深灰色&2显"
+        line6: "&2示."
+        line7: ""
+        line8: "&2默认职业以&3深绿色&2显示. 那些工作是每个登陆的玩家都"
+        line9: "&2要参与的. 只有那些拥有&cmcjobs.admin.leavedefault"
+        line10: "&2权限的玩家才能离开&3默认&2职业."
+        line11: ""
+        line12: "&2接下来是关于&elist&2命令的更多说明."
+    4:
+        line1: "&2最后, 此命令还会告诉你你的职业数量和服务器允许参"
+        line2: "&2与的最多数量, 也就是&c%j&2个." 
+        line3: "" 
+        line4: "&2&e/jobs leave&2命令的用法与&ejoin&2命令的用法类似. 通过"
+        line5: "&2该命令你可以离开你现在已经加入的职业. 如果你想要"
+        line6: "&2参与新的工作却发现自己已经达到了最高数量限制, 便"
+        line7: "&2可使用该命令来解决这个问题."
+        line8: ""
+        line9: "&2一旦你离开了一个职业你不能在短时间内再次加入."
+        line10: "&2默认值是1小时."
+        line11: ""
+        line12: "&2我们将在下一页说明&e/jobs [职业名称] &2的用法."
+    5:
+        line1: "&2&e/jobs [职业名称]&2 这个命令将显示目前服务器各种职"
+        line2: "&2业的相关信息."
+        line3: ""
+        line4: "&2第一行开头是&3职业的名称&2, 而接下来是你是否&c已参与&2该"
+        line5: "&2职业或是与其无关, 这样的话则会显示&9未参与&2."
+        line6: ""
+        line7: "&2接下来此命令还将显示你的工作的&a基本工资&2. 这个数字"
+        line8: "&2表示实施&e行为&2时&6Tier1&2将给予你的金钱或是经验."
+        line9: "&2这行的最后一点信息则告诉玩家该职业实施&e行为&2之后将"
+        line10: "&2会&a赚钱&2还是&c赔钱&2."
+        line11: ""
+        line12: "&2下一页将解释/jobs 职业名称 命令的后继内容"
+    6:
+        line1: "&2正如上文所说工作既可以使你&a赚钱&2也可以&c花费&2你的金钱."
+        line2: "&2举个例子, &6矿工&2挖掘&7铁矿&2将&a获取&2金钱. 但是放置&7铁矿&2却"
+        line3: "&2会&c扣除&2之前矿工挖矿得到的钱."
+        line4: ""
+        line5: "&2如果你当前正&c从事&2这个工作, 它会告诉你你当前该职业"
+        line6: "&2的&6等级&2和&6排名&2."
+        line7: "&2第2行是职业的&6说明&2."
+        line8: ""
+        line9: "&2横线之后是该职业的&e工作内容&2, 以及所涉及的方块和物"
+        line10: "&2体."
+        line11: ""
+        line12: "&2下一页将会解释这些工作的&e内容&2."
+    7:
+        line1: "&2这些行为包括: &6破坏&2, &6放置&2, &6击杀&2, &6制作&2, &6修理&2, &6钓鱼"
+        line2: "&2, &6制药&2, 以及&6附魔&2."
+        line3: ""
+        line4: "&6破坏&2: 指破坏类似&7泥土&2的方块的行为."
+        line5: "&6放置&2: 指放置类似&7石阶&2的方块的行为."
+        line6: "&6击杀&2: 指杀死类似&7蜘蛛&2之类的怪物的行为."
+        line7: "&6制作&2: 指类似合成&7木剑&2之类的物品的行为."
+        line8: "&6修理&2: 指类似修理&7石铲&2之类的物品的行为."
+        line9: "&2这将覆盖&6mcMMO&2的修理功能和官方修理功能."
+        line10: "&6钓鱼&2: 随时随地地用一根鱼竿&a赚钱&2, 但有时也会&c赔钱."
+        line11: "&2一般可以钓上鱼, 有时还能钓上物品."
+        line12: "&6制药&2和&6附魔&2将在下一页进行介绍."
+    8:
+        line1: "&6制药&2: 通过酿造台制造药剂来&a赚钱&2, 但有时也会&c赔钱&2."
+        line2: ""
+        line3: "&6附魔&2: 通过附魔来&a赚钱&2, 但有时也会&c赔钱&2."
+        line4: ""
+        line5: "&eEnglish&c localization done by: &6RathelmMC"
+        line6: "&eFrench&c localization done by: &6Monezombie"
+        line7: "&eGerman&c localization done by: &6Not Implemented"
+        line8: "&eNederlandse&c localization done by: &6Dreeass"
+        line9: "&eRussian&c localization done by: &6&6Grim_joy"
+        line10: "&eSpanish&c localization done by: &6Not Implemented"
+        line11: "&eChinese&c localization done by: &6Team_WhiteGem"
+        line12: "&7更多的信息请查看:&6 http://dev.bukkit.org/server-mods/mcjobs/"
+    endofpage: "&7下接第%g页"
+    command: "&6/jobs help %g"
+    finish: "&7帮助文件这里结束，谢谢支持"
+    nohelp: "&7第%g页&c不是帮助页!"
+
+admincommand:
+    permission: "&6%p&c, 你没有做这件事情的权限!"
+    failedreload: "&c重新加载插件失败!"
+    succeedreload: "&6MC职业&c重新加载成功!"
+    defaults: "&7默认值已经添加到config.yml文件里."
+    args: "&c你输入太多参数给&e/jadm&c.，所以到此为止吧，我们可是在尝试一个长得可笑的字符串."
+    exist: "&c不存在&6%j&c这个职业!"
+
+adminadd:
+    args: "&c错误的参数:  &e/jadm add [玩家/组] [职业名称]"
+    offline: "&6%p&c 小组不存在或者不是一名在线的&e玩家"
+    novault: "&6%p&c 不是一名已知玩家!"
+    hasjob: "&6%p&7 已有&9%j&7职业."
+    empty: "&7在 &6%p&7 组中没有 &eplayers&7 在线"
+    added: "&6%p&7 被添加到 &9%j&7"
+    padded: "&6%p&2 你被管理员添加到 &9%j&2 职业中"
+
+adminremove:
+    args: "&c请输入正确的命令格式：&e/jadm remove [玩家/组] [职业名称]"
+    nojob: "&6%p&7 未拥有 &9%j&7 职业"
+    nodefault: "&6%p&c 你未拥有移除 &3default&c 职业的权限!"
+    removed: "&6%p&7 被从 &9%j&7 中移除了"
+    premoved: "&6%p&2 你被管理员从 &9%j&2 职业中移除了"
+
+
+adminlist:
+    args: "&c请输入正确的命令格式：&e/jadm list [玩家/组]"
+    playerlist: "&2%p&7: %g"
+    nojobs: "&2%p&c 没有职业."
+    wrongpage: "&e%g 不是一个正确的页数。转至第一页。"
+
+pitch:
+    line0: "这个服务器正在运行:"
+    line1: "&a查看目前可以参与的职业请输入: &e/jobs list"
+    line2: "&a想加入一个职业: &e输入/jobs join 职业名字"
+    line3: "&a畅玩, &2赚钱&a, 找乐子!"
+    
+onadminlogin:
+    toolow: "&e对于基于&6经验值&e的经济来说, 你的支付规模太低了. 考虑将config.yml中的&2pay_scale&e改变为high."
+    outofdate: "&eConfig.yml已经过期. 如果不重新载入配置文件, &6MC职业&e可能不能正常工作."
+
+experience:
+    level: "&e你在 &6%j&e 上提升了一个等级"
+    reset: "&eY你在 &6%j&e 上的等级被重置为&c0&e"
+    rank:  "&eYou are now rank &6%g&e in &6%j&e."
+    added_lvl: "&7You have given &6%p &a%g&7 levels in &6%j&7."
+    padded_lvl: "&7You have been given &a%g&7 levels in &6%j&7 by a system admin."
+    added_xp: "&7You have given &6%p &a%g&7 experience in &6%j&7."
+    padded_xp: "&7You have been given &a%g&7 experience in &6%j&7 by a system admin."
+    nojob: "&6%p&c doesn't have the &6%j&c job."
+    
+
+payment:
+    pay: "&6%j&a工作使你得到了&6%g&a%p."
+    payxp: "&6%j&a工作使你得到了&6%g&a经验."
+    charge: "&6%j&a工作花费了你&c%g&a%p."
+    chargexp: "&6%j&a工作花费了你&c%g&a经验."
+    currency_single: 元
+    currency_plural: 元
+    
+spaces:
+    jobslist: 16
+    display: 4
+    displaytwo: 14
+    displaythree: 9
+    chargelen: 7
+    numhelp: 8
+
+entities:
+    blaze:        烈焰人
+    cow:          牛
+    cave_spider:  洞穴蜘蛛
+    chicken:      鸡
+    creeper:      爬行者
+    dropped_item: 鱼
+    ender_dragon: 末影龙
+    enderman:     末影人
+    ghast:        恶魂
+    giant:        巨人
+    iron_golem:   铁傀儡
+    magma_cube:   岩浆怪
+    mushroom_cow: 哞菇
+    npc:          NPC
+    ocelot:       豹猫
+    pig:          猪
+    pig_zombie:   僵尸猪人
+    player:       玩家
+    sheep:        羊
+    silverfish:   囊虫
+    skeleton:     骷髅
+    slime:        史莱姆
+    snowman:      雪人傀儡
+    spider:       蜘蛛
+    squid:        乌贼
+    wolf:         狼
+    zombie:       僵尸
+
+enchant:
+    arrow_dmg_1:      Arrow Damage I
+    arrow_dmg_2:      Arrow Damage II
+    arrow_dmg_3:      Arrow Damage III
+    arrow_dmg_4:      Arrow Damage IV
+    arrow_dmg_5:      Arrow Damage V
+    arrow_fire:       Flame Arrows
+    arrow_inf:        Infinite Arrows
+    arrow_knock_1:    Arrow Knockback I
+    arrow_knock_2:    Arrow Knockback II
+    sharp_1:          Sharpness I
+    sharp_2:          Sharpness II
+    sharp_3:          Sharpness III
+    sharp_4:          Sharpness IV
+    sharp_5:          Sharpness V
+    boa_1:            Bane of Anthropods I
+    boa_2:            Bane of Anthropods II
+    boa_3:            Bane of Anthropods III
+    boa_4:            Bane of Anthropods IV
+    boa_5:            Bane of Anthropods V
+    dmg_undead_1:     Smite I
+    dmg_undead_2:     Smite II
+    dmg_undead_3:     Smite III
+    dmg_undead_4:     Smite IV
+    dmg_undead_5:     Smite V
+    efficiency_1:     Efficiency I
+    efficiency_2:     Efficiency II
+    efficiency_3:     Efficiency III
+    efficiency_4:     Efficiency IV
+    efficiency_5:     Efficiency V
+    unbreaking_1:     Durability I
+    unbreaking_2:     Durability II
+    unbreaking_3:     Durability III
+    unbreaking_4:     Durability IV
+    unbreaking_5:     Durability V
+    fire_aspect_1:    Fire Aspect I
+    fire_aspect_2:    Fire Aspect II
+    knockback_1:      Knockback I
+    knockback_2:      Knockback II
+    fortune_1:        Fortune I
+    fortune_2:        Fortune II
+    fortune_3:        Fortune III
+    looting_1:        Looting I
+    looting_2:        Looting II
+    looting_3:        Looting III
+    respiration_1:    Respiration I
+    respiration_2:    Respiration II
+    respiration_3:    Respiration III
+    protection_1:     Protection I
+    protection_2:     Protection II
+    protection_3:     Protection III
+    protection_4:     Protection IV
+    blast_prot_1:     Blast Protection I
+    blast_prot_2:     Blast Protection II
+    blast_prot_3:     Blast Protection III
+    blast_prot_4:     Blast Protection IV
+    feather_fall_1:   Feather Fall I
+    feather_fall_2:   Feather Fall II
+    feather_fall_3:   Feather Fall III
+    feather_fall_4:   Feather Fall IV
+    fire_prot_1:      Fire Protection I
+    fire_prot_2:      Fire Protection II
+    fire_prot_3:      Fire Protection III
+    fire_prot_4:      Fire Protection IV
+    proj_prot_1:      Projectile Protection I
+    proj_prot_2:      Projectile Protection II
+    proj_prot_3:      Projectile Protection III
+    proj_prot_4:      Projectile Protection IV
+    silk_touch:       Silk Touch
+    aqua_affinity:    Aqua Affinity
+    
+potions:
+    water:            水
+    awkward:          粗制的
+    thick:            浑浊的
+    mundane:          平凡的
+    mundane_ext:      平凡的延长版
+    regen:            再生
+    regen_ext:        再生
+    regen_two:        再生 II
+    regen_two_ext:    再生 II 延长版
+    regen_spl:        再生 喷溅
+    regen_ext_spl:    再生 延长版 喷溅
+    regen_two_spl:    再生 II 喷溅
+    swift:            迅捷
+    swift_ext:        迅捷 延长版
+    swift_two:        迅捷 II
+    swift_two_ext:    迅捷 II 延长版
+    swift_spl:        迅捷 喷溅
+    swift_ext_spl:    迅捷 延长版 喷溅
+    swift_two_spl:    迅捷 II 喷溅
+    fire_res:         火焰 抵抗
+    fire_res_ext:     火焰 抵抗 延长版
+    fire_res_spl:     火焰 抵抗 喷溅
+    fire_res_ext_spl: 火焰 抵抗 延长版 喷溅
+    poison:           剧毒
+    poison_ext:       剧毒 延长版
+    poison_two:       剧毒 II
+    poison_two_ext:   剧毒 II 延长版
+    poison_spl:       剧毒 喷溅
+    poison_ext_spl:   剧毒 延长版 喷溅
+    poison_two_spl:   剧毒 II 喷溅
+    health:           治疗
+    health_two:       治疗 II
+    health_spl:       治疗 喷溅
+    health_two_spl:   治疗 II 喷溅
+    weak:             虚弱
+    weak_ext:         虚弱 延长版
+    weak_two:         虚弱 II
+    weak_spl:         虚弱 喷溅
+    weak_ext_spl:     虚弱 延长版 喷溅
+    weak_two_spl:     虚弱 II 喷溅
+    strength:         力量
+    strength_ext:     力量 延长版
+    strength_two:     力量 II
+    strength_two_ext: 力量 II 延长版
+    strength_spl:     力量 喷溅
+    strength_ext_spl: 力量 延长版 喷溅
+    strength_two_spl: 力量 II 喷溅
+    slow:             缓慢
+    slow_ext:         缓慢 延长版
+    slow_two:         缓慢 II
+    slow_spl:         缓慢 喷溅
+    slow_ext_spl:     缓慢 延长版 喷溅
+    slow_two_spl:     缓慢 II 喷溅
+    harm:             伤害
+    harm_two:         伤害 II
+    harm_spl:         伤害 喷溅
+    harm_two_spl:     伤害 II 喷溅
+    rev_fire_res:     火焰 抵抗
+    rev_slow:         缓慢
+    rev_health:       治疗
+    rev_harm:         伤害
+    rev_weak:         虚弱
+    
+materials:
+    air:                  空气
+    apple:                红苹果
+    arrow:                箭
+    bed:                  床
+    bed_block:            床
+    bedrock:              基岩
+    blaze_powder:         烈焰粉
+    blaze_rod:            烈焰棒
+    boat:                 船
+    bone:                 骨头
+    book:                 书
+    bookshelf:            书架
+    bow:                  弓
+    bowl:                 碗
+    bread:                面包
+    brewing_stand:        酿造台
+    brewing_stand_item:   酿造台
+    brick:                石砖
+    brick_stairs:         石砖台阶
+    brown_mushroom:       棕色蘑菇
+    bucket:               铁桶
+    burning_furnace:      熔炉
+    cactus:               仙人掌
+    cake:                 蛋糕
+    cake_block:           蛋糕
+    cauldron:             炼药锅
+    cauldron_item:        炼药锅
+    chainmail_boots:      锁链靴子
+    chainmail_chestplate: 锁链胸甲
+    chainmail_helmet:     锁链头盔
+    chainmail_leggings:   锁链护腿
+    chest:                箱子
+    clay:                 粘土块
+    clay_ball:            粘土
+    clay_brick:           砖块
+    coal:                 煤炭
+    coal_ore:             煤矿石
+    cobblestone:          圆石
+    cobblestone_stairs:   圆石楼梯
+    compass:              指南针
+    cooked_beef:          牛排
+    cooked_chicken:       熟鸡肉
+    cooked_fish:          熟鱼
+    cookie:               曲奇
+    crops:                小麦
+    dead_bush:            枯死的灌木
+    detector_rail:        探测铁轨
+    diamond:              钻石
+    diamond_axe:          钻石斧
+    diamond_block:        钻石块
+    diamond_boots:        钻石靴子
+    diamond_chestplate:   钻石胸甲
+    diamond_helmet:       钻石头盔
+    diamond_hoe:          钻石锄
+    diamond_leggings:     钻石护腿
+    diamond_ore:          钻石矿
+    diamond_pickaxe:      钻石镐
+    diamond_spade:        钻石锹
+    diamond_sword:        钻石剑
+    diode:                红石中继器
+    diode_block_off:      红石中继器
+    diode_block_on:       红石中继器
+    dirt:                 泥土
+    dispenser:            发射器
+    double_step:          双层台阶
+    dragon_egg:           龙蛋
+    egg:                  鸡蛋
+    enchantment_table:    附魔台
+    ender_pearl:          末影珍珠
+    ender_portal:         末地传送门
+    ender_portal_frame:   末地传送门框架
+    ender_stone:          末地石
+    exp_bottle:           附魔之瓶
+    eye_of_ender:         末影之眼
+    feather:              羽毛
+    fence:                栅栏
+    fence_gate:           栅栏门
+    fermented_spider_eye: 发酵蛛眼
+    fire:                 火
+    fireball:             火焰弹
+    fishing_rod:          钓鱼竿
+    flint:                燧石
+    flint_and_steel:      打火石
+    furnace:              熔炉
+    ghast_tear:           恶魂之泪
+    glass:                玻璃
+    glass_bottle:         瓶子
+    glowing_redstone_ore: 红石矿
+    glowstone:            萤石块
+    glowstone_dust:       萤石粉
+    gold_axe:             金斧
+    gold_block:           金块
+    gold_boots:           金靴子
+    gold_chestplate:      金胸甲
+    gold_helmet:          金头盔
+    gold_hoe:             金锄
+    gold_ingot:           金锭
+    gold_leggings:        金护腿
+    gold_nugget:          金粒
+    gold_ore:             金矿
+    gold_pickaxe:         金镐
+    gold_record:          13号唱片
+    gold_spade:           金锹
+    gold_sword:           金剑
+    golden_apple:         金苹果
+    grass:                泥土
+    gravel:               沙砾
+    green_record:         cat唱片
+    grilled_pork:         熟猪排
+    huge_mushroom_1:      巨型蘑菇
+    huge_mushroom_2:      巨型蘑菇
+    ice:                  冰
+    ink_sack:             墨囊
+    iron_axe:             铁斧
+    iron_block:           铁块
+    iron_boots:           铁质靴子
+    iron_chestplate:      铁质胸甲
+    iron_door:            铁门
+    iron_door_block:      铁门
+    iron_fence:           铁栏杆
+    iron_helmet:          铁质头盔
+    iron_hoe:             铁锄
+    iron_ingot:           铁锭
+    iron_leggings:        铁质护腿
+    iron_ore:             铁矿石
+    iron_pickaxe:         铁镐
+    iron_spade:           铁锹
+    iron_sword:           铁剑
+    jack_o_lantern:       南瓜灯
+    jukebox:              唱片机
+    ladder:               梯子
+    lapis_block:          青金石块
+    lapis_ore:            青金石矿石
+    lava:                 岩浆
+    lava_bucket:          一桶岩浆
+    leather:              皮革
+    leather_boots:        皮革靴
+    leather_chestplate:   皮革外衣
+    leather_helmet:       皮革帽子
+    leather_leggings:     皮革裤子
+    leaves:               树叶
+    lever:                拉杆
+    locked_chest:         上锁的箱子
+    log:                  木头
+    long_grass:           草丛
+    magma_cream:          岩浆膏
+    map:                  地图
+    melon:                西瓜片
+    melon_block:          西瓜
+    melon_seeds:          西瓜种子
+    melon_stem:           西瓜茎
+    milk_bucket:          牛奶
+    minecart:             矿车
+    mob_spawner:          刷怪箱
+    monster_egg:          刷怪蛋
+    monster_eggs:         怪物蛋
+    mossy_cobblestone:    苔石
+    mushroom_soup:        蘑菇煲
+    mycel:                菌丝
+    nether_brick:         地狱砖
+    nether_brick_stairs:  地狱砖楼梯
+    nether_fence:         地狱砖栅栏
+    nether_stalk:         地狱疣
+    nether_warts:         地狱疣
+    netherrack:           地狱岩
+    note_block:           音符盒
+    obsidian:             黑曜石
+    painting:             画
+    paper:                纸
+    piston_base:          活塞
+    piston_extension:     活塞
+    piston_moving_piece:  活塞
+    piston_sticky_base:   粘性活塞
+    pork:                 生猪排
+    portal:               传送门方块
+    potion:               药水
+    powered_minecart:     动力矿车
+    powered_rail:         充能铁轨
+    pumpkin:              南瓜
+    pumpkin_seeds:        南瓜种子
+    pumpkin_stem:         南瓜茎
+    rails:                铁轨
+    raw_beef:             烤牛排
+    raw_chicken:          烤鸡肉
+    raw_fish:             烤鱼
+    record_10:            ward唱片
+    record_11:            11号唱片
+    record_3:             blocks唱片
+    record_4:             chirp唱片
+    record_5:             far唱片
+    record_6:             mall唱片
+    record_7:             mellohi唱片
+    record_8:             stal唱片
+    record_9:             strad唱片
+    red_mushroom:         红蘑菇
+    red_rose:             红玫瑰
+    redstone:             红石粉
+    redstone_lamp_off:    红石灯
+    redstone_lamp_on:     发光的红石灯
+    redstone_ore:         红石矿石
+    redstone_torch_off:   红石火把
+    redstone_torch_on:    发光的红石火把
+    redstone_wire:        红石线路
+    rotten_flesh:         腐肉
+    saddle:               鞍
+    sand:                 沙子
+    sandstone:            沙石
+    sapling:              树苗
+    seeds:                种子
+    shears:               剪刀
+    sign:                 告示牌
+    sign_post:            告示牌
+    slime_ball:           粘液
+    smooth_brick:         砖块
+    smooth_stairs:        砖楼梯
+    snow:                 雪
+    snow_ball:            雪球
+    snow_block:           雪块
+    soil:                 土壤
+    soul_sand:            灵魂沙
+    speckled_melon:       闪烁的西瓜
+    spider_eye:           蜘蛛眼球
+    sponge:               海绵
+    stationary_lava:      岩浆
+    stationary_water:     水
+    step:                 台阶
+    stick:                木棍
+    stone:                原石
+    stone_axe:            石斧
+    stone_button:         按钮
+    stone_hoe:            石镰
+    stone_pickaxe:        石锄
+    stone_plate:          石压力板
+    stone_spade:          石铲
+    stone_sword:          石剑
+    storage_minecart:     运输矿车
+    string:               蜘蛛丝
+    sugar:                糖
+    sugar_cane:           甘蔗
+    sugar_cane_block:     甘蔗
+    sulphur:              火药
+    thin_glass:           玻璃板
+    tnt:                  TNT
+    torch:                火把
+    trap_door:            陷阱门
+    vine:                 蔓藤
+    wall_sign:            告示牌
+    watch:                钟
+    water:                水
+    water_bucket:         水桶
+    water_lily:           睡莲
+    web:                  蜘蛛网
+    wheat:                小麦
+    wood:                 木头
+    wood_axe:             木斧
+    wood_door:            木门
+    wood_hoe:             木锄
+    wood_pickaxe:         木镐
+    wood_plate:           木压力板
+    wood_spade:           木铲
+    wood_stairs:          木梯
+    wood_sword:           木剑
+    wooden_door:          木门
+    wool:                 羊毛
+    workbench:            工作台
+    yellow_flower:        黄花
+    birch_wood_stairs:    Birch Wood Stairs
+    book_and_quill:       Book and Quill
+    cocoa:                Cocoa
+    emerald:              Emerald
+    emerald_block:        Block of Emerald
+    emerald_ore:          Emerald Ore
+    ender_chest:          Ender Chest
+    jungle_wood_stairs:   Jungle Wood Stairs
+    spruce_wood_stairs:   Spruce Wood Stairs
+    sandstone_stairs:     Sandstone Stairs
+    step:                 Step
+    tripwire:             Trip Wire
+    tripwire_hook:        Trip Wire Hook
+    written_book:         Written Book
+
+# 文章结尾

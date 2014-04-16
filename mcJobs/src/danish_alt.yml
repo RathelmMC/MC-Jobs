@@ -1,0 +1,689 @@
+jobscommand:
+    playeronly: "Dette kan kun gøres af en spiller!"
+    permission: "&6%p&c, du har ikke tilladelse til at gøre dette!"
+    args: "&6%p&c, du gav for mange detaljer!"
+    exist: "&cJobbet, &6%j&c, eksisterer ikke!"
+    rejoin: "&7Du kan ikke arbejde som &6%j&7 igen."
+    show: "&7Nu &avises&7 løn-beskeder fra &6%j&7 jobbet."
+    hide: "&7Nu &cskjules&7  løn-beskeder fra &6%j&7 jobbet."
+
+jobsnotify:
+    and: og
+    hours: timer
+    hour: time
+    minutes: minutter
+    minute: minut
+    days: dage
+    day: dag
+    weeks: uger
+    week: uge
+    months: måneder
+    month: måned
+    message: "&aDine &6MC Jobs&a har tjent &6%j&a til dig, på &c%g&a."
+    overpay: "&e%p&a, du er opbrugt og du kan ikke tjene mere fra &6MC Jobs&a i lidt tid."
+
+jobsdisplay:
+    employed: "--   &cAnsat"
+    unemployed: "--   &9Ikke Ansat"
+    default: "--    &3Standard"
+    basepay: Grundløn
+    charge: AFGIFT
+    pay: LØNNET
+    level: LEVEL
+    rank: RANG
+    exp: XP
+    break: SMADR
+    place: PLACER
+    defeat: DRÆB
+    fishing: FISKNING
+    craft: LAV
+    repair: REPARER
+    enchant: ENCHANT
+    potions: ELIKSIRER
+    tier: LØNGRUPPE
+
+jobsjoin:
+    have: "Du har allerede jobbet, &6%j&c!"
+    join: "%p har nu jobbet, &9%j&7."
+    toomany: "&6%p&c, du har for mange jobs.  For at få et andet job:"
+    command: "/jobs leave [job]"
+    jobperm: "&6%p&7, du har ikke tilladelse til at få jobbet, &9%j&7"
+    timer: "&7Du kan ikke få jobbet, &6%j&7, i de næste &c%g&7."
+
+jobsleave:
+    quit: "Du har sagt op som &6%j&7."
+    donthave: "Du har ikke jobbet, &6%j&c."
+    leavedefault: "Du kan ikke sige op som &6%j&c, da det er et standard job."
+
+jobslist:
+    available: "&e%p&2, de tilgængelige jobs er:"
+    jobsin: "Jobs farvet med &crødt&2 har du allerede."
+    nojob: "Jobs farvet med &8mørkegråt&2 er ikke tilgængelige."
+    defaultjob: "Jobs farvet med &3marineblåt&2 er standard jobs."
+    specific: "For at lære mere om et specifikt job, skriv: &e/jobs [job name]&2 i chatten."
+    jobs: "JOBS:"
+
+jobshelp:
+    page: PAGE
+    1:
+        line1: "&7   Velkommen til &3MC Jobs&7.  &3MC Jobs&7 er et plugin der lader dig"
+        line2: "&7tjene penge, ved at du er ansat i forskellige jobs,"
+        line3: "&7og du bestemmer selv hvilke jobs."
+        line4: ""
+        line5: "&2Det første du skal gøre er at finde et job.  Du kan finde ud af"
+        line6: "&2hvilke jobs der er tilgængelige, ved at taste &e/jobs list &2i chatten."
+        line7: ""
+        line8: "&2Læs mere om hvert enkelt job ved at taste dette i chatten:"
+        line9: "&e/jobs [jobnavn]"
+        line10: ""
+        line11: "&e[job name] &2kan være et hvert job-navn, for eksempel: &6digger&2."
+        line12: "&e/jobs join &2og&e leave &2er forklaret på næste side."
+    2:
+        line1: "&2Du kan få et job ved at taste dette i chatten:"
+        line2: "&e/jobs join [jobnavn]"
+        line3: ""
+        line4: "&2Når du har fået et job kan du både tjene og miste penge. Dette er "
+        line5: "&2baseret på den løn du får af de enkelte jobs."
+        line6: "&2Du kan kun have &c%j&2 jobs på denne server."
+        line7: ""
+        line8: "&2Du kan sige dit job op ved at taste &e/jobs leave [jobnavn]&2 i chatten."
+        line9: "&2Når du har det maksimale antal jobs, kan du kun få et nyt job"
+        line10: "&2ved at sige et af dine andre jobs op."
+        line11: ""
+        line12: "&2For at læse om &e/jobs list&2, gå videre til næste side."
+    3:
+        line1: "&2&e/jobs list&2 giver et godt overblik samt brugbare"
+        line2: "&2informationer om hvilke jobs der er tilgængelige og"
+        line3: "&2hvilke jobs der er utilgængelige."
+        line4: ""
+        line5: "&2De jobs du allerede har, er farvet med &crød&2.  De jobs du godt kan få, er farvet med"
+        line6: "&6guld&2. De jobs der er utilgængelige, er farvet med &8mørkegråt&2."
+        line7: ""
+        line8: "&2Standard jobs er farvet med &3marineblå&2.  Standard jobs er"
+        line9: "&2givet til alle der joiner serveren.  Kun spillere med tilladelsen"
+        line10: "&2&cmcjobs.admin.leavedefault&2, kan sige &3standard&2 jobs op."
+        line11: ""
+        line12: "&2For at læse mere om &e/jobs list&2, gå videre til næste side."
+    4:
+        line1: "&2Til sidst kan det fortælle dig hvor mange jobs du har, samt"
+        line2: "&2hvor mange du må have, som er &c%j&2 på denne server."
+        line3: ""
+        line4: "&2&e/jobs leave&2 virker på samme måde som &ejoin."
+        line5: "&2Du kan kun sige jobs op du allerede har."
+        line6: "&2Dette lader dig vælge et nyt job,"
+        line7: "&2hvis du ændrer din mening."
+        line8: ""
+        line9: "&2Når du har sagt et job op, så kan du ikke vælge det igen før en"
+        line10: "&2serverbestemt tidsramme.  Tidsrammen er normalt på 1 time."
+        line11: ""
+        line12: "&2For at læse om &e/jobs [jobnavn]&2, gå videre til næste side."
+    5:
+        line1: "&2  &e/jobs [jobnavn]&2 giver spilleren al den"
+        line2: "&2information de har brug for at vide."
+        line3: ""
+        line4: "&2På første linie står der &3Jobbets navn&2 efterfulgt af"
+        line5: "&2om du har jobbet eller ej. Hvis ikke, så står der -Ikke Ansat."
+        line6: ""
+        line7: "&2Kommandoen fortæller også om &3grundlønnen&2. Dette tal fortæller hvor mange"
+        line8: "&2penge man tjener i &6LØNGRUPPERNE&2 ved en bestemt &ehandling&2."
+        line9: "&2Den sidste del af informationen omhandler hvor vidt jobbet udbetaler"
+        line10: "&2&aløn&2 eller er en &cafgift&2 for dig ved at gøre denne &ehandling&2."
+        line11: ""
+        line12: "&2Læs om de efterfølgende linier i &e/jobs [job]&2 på næste side."
+    6:
+        line1: "&2Som sagt kan et job både være lønnet, men samtidigt være en afgift for dig."
+        line2: "&2For eksempel, vil du som &6miner&2 blive &abetalt&2 hvis du ødelægger jernmalm."
+        line3: "&2Men hvis du placerer jernmalm vil du miste penge i stedet for."
+        line4: ""
+        line5: "&2Hvis du er &cansat&2 i det job, så vil det vise dig dit"
+        line6: "&2&6level&2 og din &6rang&2 på jobbet."
+        line7: "&2Linie nummer 2 &6beskriver&2 jobbet."
+        line8: ""
+        line9: "&2Under stregerne står der hvad du skal gøre for at tjene penge"
+        line10: "&2samt hvilke blokke det indvoldverer."
+        line11: ""
+        line12: "&2Den næste side bliver der forklaret om hvilke &ehandlinger&2."
+    7:
+        line1: "&2De mulige handlinger er: &6SMADR&2, &6PLACER&2, &6DRÆB&2, &6SKAB&2, &6REPARER&2,"
+        line2: "&6FISKNING&2, &6ELIKSIRER&2, og &6ENCHANT&2."
+        line3: ""
+        line4: "&6SMADR&2: Dette betyder, at du skal smadre blokke, lige som &7jord&2."
+        line5: "&6PLACER&2: Dette betyder, at du skal placere blokke, lige som &7sten trapper&2."
+        line6: "&6DRÆB&2: Dette betyder, at du skal dræbe monstre, lige som &7zombies&2."
+        line7: "&6SKAB&2: Dette betyder, at du skal skabe ting, lige som &7træ sværd&2."
+        line8: "&6REPARER&2: Dette betyder, at du skal reparere værktøjer, lige som &7sten skovl&2."
+        line9: "&2Dette dækker både over &6mcMMO&2 og vanilla reparetioner."
+        line10: "&6FISKNING&2: Dette betyder, at du skal fange en fisk med en fiskestang."
+        line11: ""
+        line12: "&6ELIKSIRER&2 og &6ENCHANT&2 er forklaret på næste side."
+    8:
+        line1: "&6ELIKSIRER&2: Dette betyder, at du skal lave eliksirer ved en bryggestand."
+        line2: "&6ENCHANT&2: Dette betyder at du skal enchante værktøjer."
+        line3: ""
+        line4: "&eEnglish&c localization done by: &6RathelmMC"
+        line5: "&eFrench&c localization done by: &6Monezombie"
+        line6: "&eGerman&c localization done by: &6Not Implemented"
+        line7: "&eDutch&c localization done by: &6Dreeass"
+        line8: "&eRussian&c localization done by: &6Grim_joy"
+        line9: "&eSpanish&c localization done by: &6Not Implemented"
+        line10: "&eDanish&c localization done by: &6matt035343"
+        line11: ""
+        line12: "&7For mere info:&6 http://dev.bukkit.org/server-mods/mcjobs/"
+    endofpage: "&7Fortsæt på side %g"
+    command: "&6/jobs help %g"
+    finish: "&7HJÆLPE-FILEN ER IKKE LÆNGERE"
+    nohelp: "&7%g&c findes ikke!"
+
+admincommand:
+    permission: "&6%p&c, du har ikke tilladelse til at gøre dette!"
+    failedreload: "&cPlugin'et kunne ikke genlæses!"
+    succeedreload: "&6MC Jobs&c blev genlæst!"
+    defaults: "&7Standarderne blev tiløjet til config.yml."
+    args: "&cFor mange detaljer i, &e/jadm&c."
+    exist: "&6%j&c eksisterer ikke!"
+
+adminadd:
+    args: "&cForkerte detaljer:  &e/jadm add [spiller/gruppe] [jobnavn]"
+    offline: "&6%p&c, gruppen eksisterer ikke, eller det er en &espiller&c, der ikke er online!"
+    novault: "&6%p&c er ikke en kendt spiller."
+    hasjob: "&6%p&7 har allerede &9%j&7 jobbet."
+    empty: "&7Der er ingen &espillere&7 online i gruppen &6%p&7."
+    added: "&6%p&7 er blevet føjet til &9%j&7."
+    padded: "&6%p&2, du er føjet til &9%j&2 jobbet af en admin."
+
+adminremove:
+    args: "&cForkerte detaljer:  &e/jadm remove [spiller/gruppe] [jobnavn]"
+    nojob: "&6%p&7 har ikke jobbet &9%j&7."
+    nodefault: "&6%p&c, du har ikke tilladelse til at fjerne &3standard&c jobs!"
+    removed: "&6%p&7 er blevet fjernet fra &9%j&7."
+    premoved: "&6%p&2, du er blevet fjernet fra &9%j&2 jobbet af en admin."
+
+adminlist:
+    args: "&cForkerte detaljer:  &e/jadm list [spiller/gruppe]"
+    playerlist: "&2%p&7: %g"
+    nojobs: "&2%p&c har ingen jobs."
+    wrongpage: "&e%g er ikke et egentlig sidetal.  Bruger side 1 i stedet for."
+
+pitch:
+    line0: "Denne server kører med:"
+    line1: "&aFor at se hvilke jobs der er tilgængelige, skriv: &e/jobs list"
+    line2: "&aFor at få et job, skriv : &e/jobs join [jobnavn]"
+    line3: "&aSpil, &2tjen penge&a, og hav det sjovt!"
+    
+onadminlogin:
+    toolow: "&eDin løn er for lav til en &6XP&e baseret økonomi.  Du kan ændre det i config.yml filen."
+    outofdate: "&eConfig.yml er for gammel. &6MC Jobs&e vil muligvis ikke fungere korrekt uden at genlæse config.yml."
+
+experience:
+    level: "&eDu er lige steget et niveau i &6%j&e."
+    reset: "&eDit niveau i &6%j&e er blevet nulstillet til &c0&e."
+    rank:  "&eDu er nu i rang &6%g&e i &6%j&e."
+    added_lvl: "&7You have given &6%p &a%g&7 levels in &6%j&7."
+    padded_lvl: "&7You have been given &a%g&7 levels in &6%j&7 by a system admin."
+    added_xp: "&7You have given &6%p &a%g&7 experience in &6%j&7."
+    padded_xp: "&7You have been given &a%g&7 experience in &6%j&7 by a system admin."
+    nojob: "&6%p&c doesn't have the &6%j&c job."
+
+payment:
+    pay: "&a&6%j&a jobbet har tjent dig &6%g&a %p."
+    payxp: "&a&6%j&a jobbet har tjent dig &6%g&a experience."
+    charge: "&a&6%j&a jobbet har kostet dig &c%g&a %p."
+    chargexp: "&a&6%j&a jobbet har kostet dig &c%g&a experience."
+    currency_single: dollar
+    currency_plural: dollars
+    
+spaces:
+    jobslist: 16
+    display: 4
+    displaytwo: 14
+    displaythree: 9
+    chargelen: 7
+    numhelp: 8
+
+entities:
+    blaze:        Blaze
+    cow:          Ko
+    cave_spider:  Huleedderkop
+    chicken:      Kylling
+    creeper:      Creeper
+    dropped_item: Fisk
+    ender_dragon: Enderdragon
+    enderman:     Enderman
+    ghast:        Ghast
+    giant:        Gigant
+    iron_golem:   Irongolem
+    magma_cube:   Magmaklat
+    mushroom_cow: Mooshroom Ko
+    npc:          NPC
+    ocelot:       Ozelot
+    pig:          Gris
+    pig_zombie:   Zombie Mutantgris
+    player:       Spiller
+    sheep:        Får
+    silverfish:   Sølvfisk
+    skeleton:     Skelet
+    slime:        Slimklat
+    snowman:      Snemand
+    spider:       Edderkop
+    squid:        Blæksprutte
+    wolf:         Ulv
+    zombie:       Zombie
+
+potions:
+    water:            Vand
+    awkward:          Akavet
+    thick:            Tyk
+    mundane:          Banal
+    mundane_ext:      Banal Udvidet
+    regen:            Regenerering
+    regen_ext:        Regenerering Udvidet
+    regen_two:        Regenerering II
+    regen_two_ext:    Regenerering II Udvidet
+    regen_spl:        Regenerering Plask
+    regen_ext_spl:    Regenerering Udvidet Plask
+    regen_two_spl:    Regenerering II Plask
+    swift:            Hurtighed
+    swift_ext:        Hurtighed Udvidet
+    swift_two:        Hurtighed II
+    swift_two_ext:    Hurtighed II Udvidet
+    swift_spl:        Hurtighed Plask
+    swift_ext_spl:    Hurtighed Udvidet Plask
+    swift_two_spl:    Hurtighed II Plask
+    fire_res:         Ildbeskyttelse
+    fire_res_ext:     Ildbeskyttelse Udvidet
+    fire_res_spl:     Ildbeskyttelse Plask
+    fire_res_ext_spl: Ildbeskyttelse Udvidet Plask
+    poison:           Gift
+    poison_ext:       Gift Udvidet
+    poison_two:       Gift II
+    poison_two_ext:   Gift II Udvidet
+    poison_spl:       Gift Plask
+    poison_ext_spl:   Gift Udvidet Plask
+    poison_two_spl:   Gift II Plask
+    health:           Helbredelse
+    health_two:       Helbredelse II
+    health_spl:       Helbredelse Plask
+    health_two_spl:   Helbredelse II Plask
+    weak:             Svaghed
+    weak_ext:         Svaghed Udvidet
+    weak_two:         Svaghed II
+    weak_spl:         Svaghed Plask
+    weak_ext_spl:     Svaghed Udvidet Plask
+    weak_two_spl:     Svaghed II Plask
+    strength:         Styrke
+    strength_ext:     Styrke Udvidet
+    strength_two:     Styrke II
+    strength_two_ext: Styrke II Udvidet
+    strength_spl:     Styrke Plask
+    strength_ext_spl: Styrke Udvidet Plask
+    strength_two_spl: Styrke II Plask
+    slow:             Langsomhed
+    slow_ext:         Langsomhed Udvidet
+    slow_two:         Langsomhed II
+    slow_spl:         Langsomhed Plask
+    slow_ext_spl:     Langsomhed Udvidet Plask
+    slow_two_spl:     Langsomhed II Plask
+    harm:             Skade
+    harm_two:         Skade II
+    harm_spl:         Skade Plask
+    harm_two_spl:     Skade II Plask
+    rev_fire_res:     Ildbeskyttelse
+    rev_slow:         Langsomhed
+    rev_health:       Helbredelse
+    rev_harm:         Skade
+    rev_weak:         Svaghed
+
+enchant:
+    arrow_dmg_1:      Pile Skade I
+    arrow_dmg_2:      Pile Skade II
+    arrow_dmg_3:      Pile Skade III
+    arrow_dmg_4:      Pile Skade IV
+    arrow_dmg_5:      Pile Skade V
+    arrow_fire:       Ildpile
+    arrow_inf:        Uendelige Pile
+    arrow_knock_1:    Pile-Tilbageslag I
+    arrow_knock_2:    Pile-Tilbageslag II
+    sharp_1:          Skarphed I
+    sharp_2:          Skarphed II
+    sharp_3:          Skarphed III
+    sharp_4:          Skarphed IV
+    sharp_5:          Skarphed V
+    boa_1:            Leddyrenes Banemand I
+    boa_2:            Leddyrenes Banemand II
+    boa_3:            Leddyrenes Banemand III
+    boa_4:            Leddyrenes Banemand IV
+    boa_5:            Leddyrenes Banemand V
+    dmg_undead_1:     Fordriv I
+    dmg_undead_2:     Fordriv II
+    dmg_undead_3:     Fordriv III
+    dmg_undead_4:     Fordriv IV
+    dmg_undead_5:     Fordriv V
+    efficiency_1:     Effektivitet I
+    efficiency_2:     Effektivitet II
+    efficiency_3:     Effektivitet III
+    efficiency_4:     Effektivitet IV
+    efficiency_5:     Effektivitet V
+    unbreaking_1:     Uødelæggelig I
+    unbreaking_2:     Uødelæggelig II
+    unbreaking_3:     Uødelæggelig III
+    unbreaking_4:     Uødelæggelig IV
+    unbreaking_5:     Uødelæggelig V
+    fire_aspect_1:    Ildaspect I
+    fire_aspect_2:    Ildaspect II
+    knockback_1:      Tilbageslag I
+    knockback_2:      Tilbageslag II
+    fortune_1:        Held I
+    fortune_2:        Heeld II
+    fortune_3:        Held III
+    looting_1:        Plyndring I
+    looting_2:        Plyndring II
+    looting_3:        Plyndring III
+    respiration_1:    Respiration I
+    respiration_2:    Respiration II
+    respiration_3:    Respiration III
+    protection_1:     Beskyttelse I
+    protection_2:     Beskyttelse II
+    protection_3:     Beskyttelse III
+    protection_4:     Beskyttelse IV
+    blast_prot_1:     Eksplosionsbeskyttelse I
+    blast_prot_2:     Eksplosionsbeskyttelse II
+    blast_prot_3:     Eksplosionsbeskyttelse III
+    blast_prot_4:     Eksplosionsbeskyttelse IV
+    feather_fall_1:   Fjerfald I
+    feather_fall_2:   Fjerfald II
+    feather_fall_3:   Fjerfald III
+    feather_fall_4:   Fjerfald IV
+    fire_prot_1:      Ildbeskyttelse I
+    fire_prot_2:      Ildbeskyttelse II
+    fire_prot_3:      Ildbeskyttelse III
+    fire_prot_4:      Ildbeskyttelse IV
+    proj_prot_1:      Projectilbeskyttelse I
+    proj_prot_2:      Projectilbeskyttelse II
+    proj_prot_3:      Projectilbeskyttelse III
+    proj_prot_4:      Projectilbeskyttelse IV
+    silk_touch:       Silkeberøring
+    aqua_affinity:    Vandudholdenhed
+    
+materials:
+    air:                  Luft
+    apple:                Æble
+    arrow:                Pil
+    bed:                  Seng
+    bed_block:            Seng
+    bedrock:              Grundfjeld
+    blaze_powder:         Blaze-pulver
+    blaze_rod:            Blaze-stav
+    boat:                 Båd
+    bone:                 Ben
+    book:                 Bog
+    bookshelf:            Bogreol
+    bow:                  Bue
+    bowl:                 Skål
+    bread:                Brød
+    brewing_stand:        Bryggestand
+    brewing_stand_item:   Bryggestand
+    brick:                Mursten
+    brick_stairs:         Murstenstrappe
+    brown_mushroom:       Brun Svamp
+    bucket:               Spand
+    burning_furnace:      Ovn
+    cactus:               Kaktus
+    cake:                 Kage
+    cake_block:           Kage
+    cauldron:             Gryde
+    cauldron_item:        Gryde
+    chainmail_boots:      Brynjesko
+    chainmail_chestplate: Brynjebrystplade
+    chainmail_helmet:     Brynjehjelm
+    chainmail_leggings:   Brynjebukser
+    chest:                Kiste
+    clay:                 Ler
+    clay_ball:            Lerklat
+    clay_brick:           Lermursten
+    coal:                 Kul
+    coal_ore:             Kulmalm
+    cobblestone:          Brosten
+    cobblestone_stairs:   Brostenstrappe
+    compass:              Kompas
+    cooked_beef:          Steak
+    cooked_chicken:       Grillet Kylling
+    cooked_fish:          Grillet Fisk
+    cookie:               Småkage
+    crops:                Afgrødre
+    dead_bush:            Død Busk
+    detector_rail:        Sensorskinne
+    diamond:              Diamant
+    diamond_axe:          Diamantøkse
+    diamond_block:        Diamantblok
+    diamond_boots:        Diamantsko
+    diamond_chestplate:   Diamantbrystplade
+    diamond_helmet:       Diamanthjelm
+    diamond_hoe:          Diamantlugejern
+    diamond_leggings:     Diamantbukser
+    diamond_ore:          Diamantmalm
+    diamond_pickaxe:      Diamanthakke
+    diamond_spade:        Diamantspade
+    diamond_sword:        Diamantsværd
+    diode:                Redstone-gentager
+    diode_block_off:      Redstone-gentager
+    diode_block_on:       Redstone-gentager
+    dirt:                 Jord
+    dispenser:            Automat
+    double_step:          Dobbelt Trin
+    dragon_egg:           Drageæg
+    egg:                  Æg
+    enchantment_table:    Enchantment-bord
+    ender_pearl:          Ender-perle
+    ender_portal:         Ender-portal
+    ender_portal_frame:   Ender-portalramme
+    ender_stone:          Ender-sten
+    exp_bottle:           Experience-flaske
+    eye_of_ender:         Ender-øje
+    feather:              Fjer
+    fence:                Hegn
+    fence_gate:           Havelåge
+    fermented_spider_eye: Syltet Edderkoppeøje
+    fire:                 Ild
+    fireball:             Ildkugle
+    fishing_rod:          Fiskestang
+    flint:                Flint
+    flint_and_steel:      Flint og stål
+    furnace:              Ovn
+    ghast_tear:           Ghast-tåre
+    glass:                Glas
+    glass_bottle:         Flaske
+    glowing_redstone_ore: Redstone-malm
+    glowstone:            Glødesten
+    glowstone_dust:       Glødestensstøv
+    gold_axe:             Guldøkse
+    gold_block:           Guldblok
+    gold_boots:           Guldsko
+    gold_chestplate:      Guldbrystplade
+    gold_helmet:          Guldhjelm
+    gold_hoe:             Guldlugejern
+    gold_ingot:           Gulgbar
+    gold_leggings:        Guldbukser
+    gold_nugget:          Guldstykke
+    gold_ore:             Guldmalm
+    gold_pickaxe:         Guldhakke
+    gold_record:          Musikplade c418 - 13
+    gold_spade:           Guldskovl
+    gold_sword:           Guldsværd
+    golden_apple:         Guldæble
+    grass:                Jord
+    gravel:               Grus
+    green_record:         Musikplade c418 - cat
+    grilled_pork:         Grillet Svinekød
+    huge_mushroom_1:      Gigant Svamp
+    huge_mushroom_2:      Gigant Svamp
+    ice:                  Is
+    ink_sack:             Blæk
+    iron_axe:             Jernøkse
+    iron_block:           Jernblok
+    iron_boots:           Jernsko
+    iron_chestplate:      Jernbrystplade
+    iron_door:            Jerndør
+    iron_door_block:      Jerndør
+    iron_fence:           Jernhegn
+    iron_helmet:          Jernhjelm
+    iron_hoe:             Jernlugejern
+    iron_ingot:           Jernbar
+    iron_leggings:        Jernbar
+    iron_ore:             Jernmalm
+    iron_pickaxe:         Jernhakke
+    iron_spade:           Jernskovl
+    iron_sword:           Jernsværd
+    jack_o_lantern:       Græskarlampe
+    jukebox:              Jukebox
+    ladder:               Stige
+    lapis_block:          Lapis Lazuli-blok
+    lapis_ore:            Lapis Lazuli-malm
+    lava:                 Lava
+    lava_bucket:          Spand Med Lava
+    leather:              Læder
+    leather_boots:        Lædersko
+    leather_chestplate:   Læderbrystplade
+    leather_helmet:       Læderhjelm
+    leather_leggings:     Læderbukser
+    leaves:               Blade
+    lever:                Håndtag
+    locked_chest:         Låst Kiste
+    log:                  Træstamme
+    long_grass:           Højt Græs
+    magma_cream:          Magmacreme
+    map:                  Kort
+    melon:                Vandmelonsstykke
+    melon_block:          Vandmelon
+    melon_seeds:          Vandmelonsfrø
+    melon_stem:           Vandmelonsplante
+    milk_bucket:          Spand Med Mælk
+    minecart:             Minevign
+    mob_spawner:          Mob Spawner
+    monster_egg:          Monsteræg
+    monster_eggs:         Sølvfiskeblok
+    mossy_cobblestone:    Mosset Brosten
+    mushroom_soup:        Svampesuppe
+    mycel:                Svampevæv
+    nether_brick:         Nether-mursten
+    nether_brick_stairs:  Nether-murstenstrappe
+    nether_fence:         Nether-hegn
+    nether_stalk:         Nether-plante
+    nether_warts:         Nether-planter
+    netherrack:           Nether-sten
+    note_block:           Nodeblok
+    obsidian:             Obsidian
+    painting:             Maleri
+    paper:                Papir
+    piston_base:          Stempel
+    piston_extension:     Stempel
+    piston_moving_piece:  Stempel
+    piston_sticky_base:   Klistret Stempel
+    pork:                 Rår Svinekød
+    portal:               Portal
+    potion:               Eliksir
+    powered_minecart:     Motoriseret Minevogn
+    powered_rail:         Strømskinne
+    pumpkin:              Græskar
+    pumpkin_seeds:        Græskarfrø
+    pumpkin_stem:         Græskarplante
+    rails:                Skinner
+    raw_beef:             Råt Oksekød
+    raw_chicken:          Rå Kylling
+    raw_fish:             Rå fisk
+    record_10:            Musikplade c418 - ward
+    record_11:            Musikplade c418 - 11
+    record_3:             Musikplade c418 - blocks
+    record_4:             Musikplade c418 - chirp
+    record_5:             Musikplade c418 - far
+    record_6:             Musikplade c418 - mall
+    record_7:             Musikplade c418 - mellohi
+    record_8:             Musikplade c418 - stal
+    record_9:             Musikplade c418 - strad
+    red_mushroom:         Rød Svamp
+    red_rose:             Rose
+    redstone:             Redstone-pulver
+    redstone_lamp_off:    Redstone-lampe
+    redstone_lamp_on:     Redstone-lampe
+    redstone_ore:         Redstone-malm
+    redstone_torch_off:   Redstone-fakkel
+    redstone_torch_on:    Redstone-fakkel
+    redstone_wire:        Redstone-pulver
+    rotten_flesh:         Råddent Kød
+    saddle:               Saddel
+    sand:                 Sand
+    sandstone:            Sandsten
+    sapling:              Stikling
+    seeds:                Frø
+    shears:               Saks
+    sign:                 skilt
+    sign_post:            skilt
+    slime_ball:           Slimklat
+    smooth_brick:         Stenmursten
+    smooth_stairs:        Stenmurstenstrappe
+    snow:                 Sne
+    snow_ball:            Snebold
+    snow_block:           Sneblok
+    soil:                 Jord
+    soul_sand:            Sjælesand
+    speckled_melon:       Glitrende Melon
+    spider_eye:           Edderkoppeøje
+    sponge:               Svamp
+    stationary_lava:      Lava
+    stationary_water:     Vand
+    step:                 Trin
+    stick:                Pind
+    stone:                Sten
+    stone_axe:            Stenøkse
+    stone_button:         Knap
+    stone_hoe:            Stenlugejern
+    stone_pickaxe:        Stenhakke
+    stone_plate:          Stentrykplade
+    stone_spade:          Stenspade
+    stone_sword:          Stensværd
+    storage_minecart:     Opbevaringsminevogn
+    string:               Snor
+    sugar:                Sukker
+    sugar_cane:           Sukkerrør
+    sugar_cane_block:     Sukkerrør
+    sulphur:              Krudt
+    thin_glass:           Tyndt Glas
+    tnt:                  TNT
+    torch:                Fakkel
+    trap_door:            Lem
+    vine:                 Ranke
+    wall_sign:            Skilt
+    watch:                Ur
+    water:                Vand
+    water_bucket:         Spand Med Vand
+    water_lily:           Åkande
+    web:                  Edderkoppespind
+    wheat:                Hvede
+    wood:                 Træ
+    wood_axe:             Træøkse
+    wood_door:            Trædør
+    wood_hoe:             Trælugejern
+    wood_pickaxe:         Træhakke
+    wood_plate:           Trætrykplade
+    wood_spade:           Træspade
+    wood_stairs:          Trætrappe
+    wood_sword:           Træsværd
+    wooden_door:          Trædør
+    wool:                 Uld
+    workbench:            Arbejdsbord
+    yellow_flower:        Gul Blomst
+    birch_wood_stairs:    Birch Wood Stairs
+    book_and_quill:       Book and Quill
+    cocoa:                Cocoa
+    emerald:              Emerald
+    emerald_block:        Block of Emerald
+    emerald_ore:          Emerald Ore
+    ender_chest:          Ender Chest
+    jungle_wood_stairs:   Jungle Wood Stairs
+    spruce_wood_stairs:   Spruce Wood Stairs
+    sandstone_stairs:     Sandstone Stairs
+    step:                 Step
+    tripwire:             Trip Wire
+    tripwire_hook:        Trip Wire Hook
+    written_book:         Written Book
+
+# End of File

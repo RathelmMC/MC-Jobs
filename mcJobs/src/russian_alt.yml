@@ -1,0 +1,687 @@
+jobscommand:
+    playeronly: "Можеть быть выполнено только игроком!"
+    permission: "&6%p&c у Вас нет прав на это!"
+    args: "&6%p&c Вы дали слишком много аргументов!"
+    exist: "&cРабота &6%j&c не существует!"
+    rejoin: "&7Теперь Вы можете вернуться на &6%j&7 работу."
+    show: "&7Now &ashowing&7 pay messages for the &6%j&7 job."
+    hide: "&7Now &chiding&7 pay messages for the &6%j&7 job."
+
+jobsnotify:
+    and: и
+    hours: часы
+    hour: час
+    minutes: минуты
+    minute: минута
+    days: дни
+    day: день
+    weeks: недели
+    week: неделя
+    months: месяцы
+    month: месяц
+    message: "&aYour &6MC Jobs&a have earned you &6%j&a in the past &c%g&a."
+    overpay: "&e%p&a, you are exhausted and cannot earn more from &6MC Jobs&a for awhile."
+
+jobsdisplay:
+    employed: "--   &cВыбрана"
+    unemployed: "-- &9Доступна"
+    default: "--    &3По умолчанию"
+    basepay: Зарплата
+    charge: Налог
+    pay: Оплата
+    level: Уровень
+    rank: Ранг
+    exp: Опыт
+    break: Ломать
+    place: Ставить
+    defeat: Уничтожать
+    fishing: Рыбалка
+    craft: Крафтить
+    repair: Ремонт
+    enchant: Заччаровывать
+    potions: Зелья
+    tier: Уровень
+
+jobsjoin:
+    have: "У вас уже есть &6%j&c!"
+    join: "%p присоединился к &9%j&7."
+    toomany: "&6%p&c у вас слишком много работы. Чтобы присоединиться к новой работе:"
+    command: "/jobs leave [job]"
+    jobperm: "&6%p&7 У вас нет разрешения присоединиться к &9%j&7"
+    timer: "&7YВы не можете присоединиться &6%j&7 к &c%g&7."
+ 
+jobsleave:
+    quit: "Вы уволились с &6%j&7."
+    donthave: "У вас нет &6%j&c работы."
+    leavedefault: "Вы не можете уволиться &6%j&c эта работа, задано по умолчанию."
+
+jobslist:
+    available: "&e%p&2, доступных рабочих мест:"
+    jobsin: "Ваши работы, помечены &cкрасным&2."
+    nojob: "Вакансии &8темно-серым&2 не доступны для Вас."
+    defaultjob: "Работы по умолчанию помечены &3голубым&2."
+    specific: "Чтобы узнать о работе: &e/jobs [job name]"    
+    jobs: "Работ:"
+
+jobshelp:
+    page: Страница
+    1:
+        line1: "&7Добро пожаловать в &3MC Jobs&7.  &3MC Jobs&7 это плагин,"
+        line2: "&7позволяющий Вам работать, тем самым, зарабатывая деньги."
+        line3: ""   
+        line4: "&2Для начала вам нужно выбрать работу. Вы можете найти"
+        line5: "&2какая работа имеется, набрав &e/jobs list&2 в окне чата."
+        line6: ""
+        line7: "&2Узнайте больше о каждой работе, набрав в окне чата:"
+        line8: "&e/jobs [job_name]"
+        line9: ""
+        line10: "&e[job name] &2может быть любое имя работы, например, &6digger&2."
+        line11: "&e/jobs join &2и&e leave &2описаны на следующей странице."
+    2:
+        line1: "&2Вы можете присоединиться к работе, набрав команду:"
+        line2: "&e/jobs join [job name]"
+        line3: ""
+        line4: "&2Присоединение к работе позволит Вам заработать и"
+        line5: "&2тратить деньги. Вам разрешено иметь"
+        line6: "&2максимум &c%j&2 работы на этом сервере."
+        line7: ""
+        line8: "&2Вы можете уволиться, введя &e/jobs leave [job name]"
+        line9: "&2Если у Вас максимальное количество работ, Вы можете,"
+        line10: "&2уволиться со старых работ и выбрать новые."
+    3:
+        line1: "&2Команда списка на быстрый взгляд дает полезную"
+        line2: "&2информацию о том, какие работы доступны Вам"
+        line3: "&2и на какую работу Вы не можете устроиться."
+        line4: ""
+        line5: "&2Ваши работы отмечены &cкрасным&2.  Работы, на которые"
+        line6: "&2можно устроиться, помечены &6золотым&2.  Работы, которые"
+        line7: "&2не доступны Вам можно увидеть &8темно-серым&2 цветом."
+        line8: ""
+        line9: "&2Работы по умолчанию, отмечены &3голубым&2. Это работы,"
+        line10: "&2которые даны каждому, при входе.  Только игрок с"
+        line11: "&2разрешением &cmcjobs.admin.leavedefault&2 может уволиться"
+        line12: "&2с &3работы по умолчанию&2."
+    4:
+        line1: "&2Это говорит Вам, сколько работ у Вас есть"
+        line2: "&2по-сравнению с максимальным количеством работ &c%j&2." 
+        line3: "" 
+        line4: "&2Команда &e/jobs leave&2 работает так же, как &ejoin"
+        line5: "&2Вы можете уволиться с работы, которая у Вас есть"
+        line6: "&2Это позволит Вам выбрать новую работу, в случае"
+        line7: "&2смены Вашего решения о том, чем хотите заниматься."
+        line8: ""
+        line9: "&2Как только Вы уволитесь, Вы не сможете устроиться на"
+        line10: "&2эту же работу снова, в течении опр. времени."
+        line11: ""
+        line12: "&2Чтобы узнать о &e/jobs [job name] продолжите."
+    5:
+        line1: "&2Команда &e/jobs [job name]&2 дает игроку всю"
+        line2: "&2информацию, он должен знать все о каждой работе."
+        line3: ""
+        line4: "&2Первая строка &3имя работы&2 и сопровождается"
+        line5: "&2статусом к работе &cнаняты&2 на данную работу или"
+        line6: "&2же нет. В этом случае, статус &9доступна&2."
+        line7: "&2Далее идет Ваша &aбазовый оклад&2 работы.  Это число"
+        line8: "&2денег или опыта, начисленного после выполнения &eдействия&2."
+        line9: "&2Последнее - это показатель того,"
+        line10: "&2работа &aплатит&2 или берет &cналог&2 за выполн. &eдействие&2."
+        line11: ""
+        line12: "&2Следующая страница объяснит &e/jobs [job]"
+    6:
+        line1: "&2Как сказано, работа может выплатить, а может и взять налог."
+        line2: "&2Например, работа &6шахтера&2 &aзаплатит&2 за добычу &7железной руды2."
+        line3: "&2Однако, если Вы поставите &7железную руду&2 с Вас будет снят налог."
+        line4: ""
+        line5: "&2Если Вы будете &cустроены&2 на работу, то можно увидеть"
+        line6: "&2Ваш &6уровень&2 и &6ранг&2 в выбранной работе."
+        line7: "&2Вторая строка является &6описанием&2 работы."
+        line8: ""
+        line9: "&2После черты, показано действие, которое нужно совершить"
+        line10: "&2. с блоками и предметами, данными ниже."
+        line11: ""
+        line12: "&2На след. странице объяснение возможных &eдействий&2."
+    7:
+        line1: "&2Действия: &6Ломать&2, &6Строить&2, &6Убить&2, &6Крафтить&2, &6Ремонт&2,"
+        line2: "&6Рыбалка&2, &6Зелья&2, и &6Зачарования&2."
+        line3: ""
+        line4: "&6Ломать&2: Уничтожение блоков, таких как &7земля&2."
+        line5: "&6Строить&2: Строительство из блоков, как &7каменная лестница&2."
+        line6: "&6Убить&2: Убийство мобов, таких как &7паук&2."
+        line7: "&6Крафтить&2: Создание предметов, таких как &7деревянный меч&2."
+        line8: "&6Ремонт&2: Ремонт предметов, как &7каменная лопата&2."
+        line9: "&2Это включает в себя ремонт в &6mcMMO&2."
+        line10: "&6Рыбалка&2: &aОплата&2 или &cналог&2 всякий раз когда Вы"
+        line11: "&2ловити рыбу."
+        line12: "&6Зелья&2 и &6Зачарования&2 описаны на следующей странице."
+    8:
+        line1: "&6Зелья&2: &aОплата&2 или &cналог&2 за использования алхим. стойки,"
+        line2: "&2 чтобы сделать зелья."
+        line3: "&6Зачарования&2: &aОплата&2 или &cналог&2 когда игрок очаровывает предмет."
+        line4: ""
+        line5: "&eEnglish&c локализация, сделанная: &6RathelmMC"
+        line6: "&eFrench&c локализация, сделанная: &6Monezombie"
+        line7: "&eGerman&c локализация, сделанная: &6Not Implemented"
+        line8: "&eNederlandse&c локализация, сделанная: &6Dreeass"
+        line9: "&eRussian&c локализация, сделанная: &6Grim_joy"
+        line10: "&eSpanish&c локализация, сделанная: &6Not Implemented"
+        line11: ""
+        line12: "&7Больше информации:&6 http://dev.bukkit.org/server-mods/mcjobs/"
+    endofpage: "&7Продолжить на странице %g"
+    command: "&6/jobs help %g"
+    finish: "&7Конец файла справки"
+    nohelp: "&7%g&c не страница справки!"
+
+admincommand:
+    permission: "&6%p&c у Вас нет прав на это!"
+    failedreload: "&cНе удалось перезагрузить плагин!"
+    succeedreload: "&6MC Jobs&c был перезагружен!"
+    defaults: "&7Defaults have been added to the config.yml file."
+    args: "&cСлишком много аргументов за &e/jadm&c. Так что это конец, мы собираемся проверить длинную строку."
+    exist: "&6%j&c не существует!"
+
+adminadd:
+    args: "&cНеправильные аргументы:  &e/jadm add [player/group] [job_name]"
+    offline: "&6%p&c группа не существует или не является &eигроком&c онлайн!"
+    novault: "&6%p&c не известный игрок!"
+    hasjob: "&6%p&7 уже имеет &9%j&7 работу."
+    empty: "&7Нет никаких &eигроков&7 онлайн в &6%p&7 группах."
+    added: "&6%p&7 был добавлен к &9%j&7."
+    padded: "&6%p&2 вы были добавлены к работе &9%j&2 сервером."
+
+adminremove:
+    args: "&cНеправильные аргументы:  &e/jadm remove [player/group] [job_name]"
+    nojob: "&6%p&7 не имеет &9%j&7 работы."
+    nodefault: "&6%p&c у Вас нет прав уволиться с работы &3по умолчанию&c!"
+    removed: "&6%p&7 был уволен с &9%j&7."
+    premoved: "&6%p&2 вы были уволены с &9%j&2 работы сервером."
+
+
+adminlist:
+    args: "&cWНеправильные аргументы:  &e/jadm list [player/group]"
+    playerlist: "&2%p&7: %g"
+    nojobs: "&2%p&c не имеет работ."
+    wrongpage: "&e%g не является номером страницы.  Используете стр. 1."
+
+pitch:
+    line0: "Этот сервер работает:"
+    line1: "&aЧтобы увидеть доступные работы: &e/jobs list"
+    line2: "&aЧтобы устроиться на работу: &e/jobs join [job_name]"
+    line3: "&aИграйте, &2зарабатывайте деньги&a, и развлекайтесь!"
+    
+onadminlogin:
+    toolow: "&eВаш уровень заработной платы очень низок для &6XP&e экономики.  Измените значение &2pay_scale&e в config.yml."
+    outofdate: "&eConfig.yml устарел. &6MC Jobs&e не может работать без перезагрузки файла конфигурации."
+
+experience:
+    level: "&eПоздравляем! Вы получили уровень &6%j&e."
+    reset: "&eВаш уровень &6%j&e был сброшен к &c0&e."
+    rank:  "&eYou are now rank &6%g&e in &6%j&e."
+    added_lvl: "&7You have given &6%p &a%g&7 levels in &6%j&7."
+    padded_lvl: "&7You have been given &a%g&7 levels in &6%j&7 by a system admin."
+    added_xp: "&7You have given &6%p &a%g&7 experience in &6%j&7."
+    padded_xp: "&7You have been given &a%g&7 experience in &6%j&7 by a system admin."
+    nojob: "&6%p&c doesn't have the &6%j&c job."
+
+payment:
+    pay: "&aЗа работу &6%j&a Вы получили &6%g&a %p."
+    payxp: "&aЗа работу &6%j&a Вы получили &6%g&a опыта."
+    charge: "&aРабота &6%j&a обошлась Вам в &c%g&a %p."
+    chargexp: "&aРабота &6%j&a jобошлась Вам в &c%g&a опыта."
+    currency_single: доллар
+    currency_plural: доллары
+    
+spaces:
+    jobslist: 16
+    display: 4
+    displaytwo: 14
+    displaythree: 9
+    chargelen: 7
+    numhelp: 8
+
+entities:
+    blaze:        Ифрит
+    cow:          Корова
+    cave_spider:  Пещерный паук
+    chicken:      Курица
+    creeper:      Крипер
+    dropped_item: Рыба
+    ender_dragon: Дракон
+    enderman:     Странник Края
+    ghast:        Гаст
+    giant:        Гигант
+    iron_golem:   Железный голем
+    magma_cube:   Лавовый куб
+    mushroom_cow: Грибная корова
+    npc:          Деревенские жители
+    ocelot:       Оцелот
+    pig:          Свинья
+    pig_zombie:   Зомби-свиночеловек
+    player:       Игрок
+    sheep:        Овца
+    silverfish:   Чешуйница
+    skeleton:     Скелет
+    slime:        Слизень
+    snowman:      Снежный голем
+    spider:       Паук
+    squid:        Спрут
+    wolf:         Волк
+    zombie:       Зомби
+
+potions:
+    water:            Water
+    awkward:          Awkward
+    thick:            Thick
+    mundane:          Mundane
+    mundane_ext:      Mundane Extend
+    regen:            Regen
+    regen_ext:        Regen Extend
+    regen_two:        Regen II
+    regen_two_ext:    Regen II Extend
+    regen_spl:        Regen Splash
+    regen_ext_spl:    Regen Extend Splash
+    regen_two_spl:    Regen II Splash
+    swift:            Swift
+    swift_ext:        Swift Extend
+    swift_two:        Swift II
+    swift_two_ext:    Swift II Extend
+    swift_spl:        Swift Splash
+    swift_ext_spl:    Swift Extend Splash
+    swift_two_spl:    Swift II Splash
+    fire_res:         Fire Resist
+    fire_res_ext:     Fire Resist Extend
+    fire_res_spl:     Fire Resist Splash
+    fire_res_ext_spl: Fire Resist Extend Splash
+    poison:           Poison
+    poison_ext:       Poison Extend
+    poison_two:       Poison II
+    poison_two_ext:   Poison II Extend
+    poison_spl:       Poison Splash
+    poison_ext_spl:   Poison Extend Splash
+    poison_two_spl:   Poison II Splash
+    health:           Healing
+    health_two:       Healing II
+    health_spl:       Healing Splash
+    health_two_spl:   Healing II Splash
+    weak:             Weak
+    weak_ext:         Weak Extend
+    weak_two:         Weak II
+    weak_spl:         Weak Splash
+    weak_ext_spl:     Weak Extend Splash
+    weak_two_spl:     Weak II Splash
+    strength:         Strength
+    strength_ext:     Strength Extend
+    strength_two:     Strength II
+    strength_two_ext: Strength II Extend
+    strength_spl:     Strength Splash
+    strength_ext_spl: Strength Extend Splash
+    strength_two_spl: Strength II Splash
+    slow:             Slow
+    slow_ext:         Slow Extend
+    slow_two:         Slow II
+    slow_spl:         Slow Splash
+    slow_ext_spl:     Slow Extend Splash
+    slow_two_spl:     Slow II Splash
+    harm:             Harm
+    harm_two:         Harm II
+    harm_spl:         Harm Splash
+    harm_two_spl:     Harm II Splash
+    rev_fire_res:     Fire Resist
+    rev_slow:         Slow
+    rev_health:       Healing
+    rev_harm:         Harm
+    rev_weak:         Weak
+
+enchant:
+    arrow_dmg_1:      Arrow Damage I
+    arrow_dmg_2:      Arrow Damage II
+    arrow_dmg_3:      Arrow Damage III
+    arrow_dmg_4:      Arrow Damage IV
+    arrow_dmg_5:      Arrow Damage V
+    arrow_fire:       Flame Arrows
+    arrow_inf:        Infinite Arrows
+    arrow_knock_1:    Arrow Knockback I
+    arrow_knock_2:    Arrow Knockback II
+    sharp_1:          Sharpness I
+    sharp_2:          Sharpness II
+    sharp_3:          Sharpness III
+    sharp_4:          Sharpness IV
+    sharp_5:          Sharpness V
+    boa_1:            Bane of Anthropods I
+    boa_2:            Bane of Anthropods II
+    boa_3:            Bane of Anthropods III
+    boa_4:            Bane of Anthropods IV
+    boa_5:            Bane of Anthropods V
+    dmg_undead_1:     Smite I
+    dmg_undead_2:     Smite II
+    dmg_undead_3:     Smite III
+    dmg_undead_4:     Smite IV
+    dmg_undead_5:     Smite V
+    efficiency_1:     Efficiency I
+    efficiency_2:     Efficiency II
+    efficiency_3:     Efficiency III
+    efficiency_4:     Efficiency IV
+    efficiency_5:     Efficiency V
+    unbreaking_1:     Durability I
+    unbreaking_2:     Durability II
+    unbreaking_3:     Durability III
+    unbreaking_4:     Durability IV
+    unbreaking_5:     Durability V
+    fire_aspect_1:    Fire Aspect I
+    fire_aspect_2:    Fire Aspect II
+    knockback_1:      Knockback I
+    knockback_2:      Knockback II
+    fortune_1:        Fortune I
+    fortune_2:        Fortune II
+    fortune_3:        Fortune III
+    looting_1:        Looting I
+    looting_2:        Looting II
+    looting_3:        Looting III
+    respiration_1:    Respiration I
+    respiration_2:    Respiration II
+    respiration_3:    Respiration III
+    protection_1:     Protection I
+    protection_2:     Protection II
+    protection_3:     Protection III
+    protection_4:     Protection IV
+    blast_prot_1:     Blast Protection I
+    blast_prot_2:     Blast Protection II
+    blast_prot_3:     Blast Protection III
+    blast_prot_4:     Blast Protection IV
+    feather_fall_1:   Feather Fall I
+    feather_fall_2:   Feather Fall II
+    feather_fall_3:   Feather Fall III
+    feather_fall_4:   Feather Fall IV
+    fire_prot_1:      Fire Protection I
+    fire_prot_2:      Fire Protection II
+    fire_prot_3:      Fire Protection III
+    fire_prot_4:      Fire Protection IV
+    proj_prot_1:      Projectile Protection I
+    proj_prot_2:      Projectile Protection II
+    proj_prot_3:      Projectile Protection III
+    proj_prot_4:      Projectile Protection IV
+    silk_touch:       Silk Touch
+    aqua_affinity:    Aqua Affinity
+
+materials:
+    air:                  Воздух
+    apple:                Яблоко
+    arrow:                Стрела
+    bed:                  Кровать
+    bed_block:            Кровать
+    bedrock:              Коренная порода
+    blaze_powder:         Огненный порошок
+    blaze_rod:            Огненный жезл
+    boat:                 Лодка
+    bone:                 Кость
+    book:                 Книга
+    bookshelf:            Книжная полка
+    bow:                  Лук
+    bowl:                 Шар
+    bread:                Хлеб
+    brewing_stand:        Алхим. стенд
+    brewing_stand_item:   Алхим. стенд
+    brick:                Кирпич
+    brick_stairs:         Кирпичная лестница
+    brown_mushroom:       Серый гриб
+    bucket:               Железное ведро
+    burning_furnace:      Печь
+    cactus:               Кактус
+    cake:                 Торт
+    cake_block:           Торт
+    cauldron:             Котел
+    cauldron_item:        Котел
+    chainmail_boots:      Кольчужные ботинки
+    chainmail_chestplate: Кольчуга
+    chainmail_helmet:     Койф
+    chainmail_leggings:   Кольчужные поножи
+    chest:                Сундук
+    clay:                 Глина
+    clay_ball:            Глиняный шар
+    clay_brick:           Глиняный кирпич
+    coal:                 Уголь
+    coal_ore:             Угольная руда
+    cobblestone:          Булыжник
+    cobblestone_stairs:   Ступеньки из булыжника
+    compass:              Компас
+    cooked_beef:          Стейк
+    cooked_chicken:       Жареная курица
+    cooked_fish:          Жареная рыба
+    cookie:               Печенье
+    crops:                Зерна
+    dead_bush:            Гнилая плоть
+    detector_rail:        Нажимные рельсы
+    diamond:              Алмаз
+    diamond_axe:          Алмазный топор
+    diamond_block:        Блок из алмазов
+    diamond_boots:        Алмазные поножи
+    diamond_chestplate:   Алмазный нагрудник
+    diamond_helmet:       Алмазный шлем
+    diamond_hoe:          Алмазная мотыга
+    diamond_leggings:     Алмазные поножи
+    diamond_ore:          Неограненный алмаз
+    diamond_pickaxe:      Алмазная кирка
+    diamond_spade:        Алмазная лопата
+    diamond_sword:        Алмазный меч
+    diode:                Повторитель
+    diode_block_off:      Повторитель
+    diode_block_on:       Повторитель
+    dirt:                 Земля
+    dispenser:            Раздатчик
+    double_step:          Плиты
+    dragon_egg:           Яйцо Дракона
+    egg:                  Яйцо
+    enchantment_table:    Стол зачарований
+    ender_pearl:          Жемчуг Края
+    ender_portal:         Портал в Край
+    ender_portal_frame:   Портал в Край
+    ender_stone:          Камень Края
+    exp_bottle:           Пузырек опыта
+    eye_of_ender:         Око Края
+    feather:              Перо
+    fence:                Забор
+    fence_gate:           Калитка
+    fermented_spider_eye: Маринованный паучий глаз
+    fire:                 Огонь
+    fireball:             Огненный шар
+    fishing_rod:          Удочка
+    flint:                Кремень
+    flint_and_steel:      Зажигалка
+    furnace:              Печь
+    ghast_tear:           Слеза Гаста
+    glass:                Стекло
+    glass_bottle:         Бутылка
+    glowing_redstone_ore: Красная руда
+    glowstone:            Светокамень
+    glowstone_dust:       Светопыль
+    gold_axe:             Золотой топор
+    gold_block:           Золотой блок
+    gold_boots:           Золотые ботинки
+    gold_chestplate:      Золотой нагрудник
+    gold_helmet:          Золотой шлем
+    gold_hoe:             Золотая мотыга
+    gold_ingot:           Слиток золота
+    gold_leggings:        Золотые поножи
+    gold_nugget:          Самородок
+    gold_ore:             Золотая руда
+    gold_pickaxe:         Золотая кирка
+    gold_record:          Пластинка c418 - 13
+    gold_spade:           Золотая лопата
+    gold_sword:           Золотой меч
+    golden_apple:         Золотое яблоко
+    grass:                Трава
+    gravel:               Гравий
+    green_record:         Пластинка c418 - cat
+    grilled_pork:         Baby Back Ribs
+    huge_mushroom_1:      Гигантский гриб
+    huge_mushroom_2:      Гигантский гриб
+    ice:                  Лед
+    ink_sack:             Чернила
+    iron_axe:             Железный топор
+    iron_block:           Железный блок
+    iron_boots:           Железные ботинки
+    iron_chestplate:      Железный нагрудник
+    iron_door:            Железная дверь
+    iron_door_block:      Железная дверь
+    iron_fence:           Железная решетка
+    iron_helmet:          Железный шлем
+    iron_hoe:             Железная мотыга
+    iron_ingot:           Железный слиток
+    iron_leggings:        Железные поножи
+    iron_ore:             Железная руда
+    iron_pickaxe:         Железная кирка
+    iron_spade:           Железная лопата
+    iron_sword:           Железный меч
+    jack_o_lantern:       Светильник Джека
+    jukebox:              Проигрыватель
+    ladder:               Лестница
+    lapis_block:          Лазуритовый блок
+    lapis_ore:            Лазуритовая руда
+    lava:                 Лава
+    lava_bucket:          Ведро лавы
+    leather:              Кожа
+    leather_boots:        Кожанные ботинки
+    leather_chestplate:   Кожанный нагрудник
+    leather_helmet:       Кожанный шлен
+    leather_leggings:     Кожанные поножи
+    leaves:               Листва
+    lever:                Рычаг
+    locked_chest:         Сундук
+    log:                  Дерево
+    long_grass:           Трава
+    magma_cream:          Лавовый крем
+    map:                  Карта
+    melon:                Кусочек арбуза
+    melon_block:          Арбуз
+    melon_seeds:          Семена арбуза
+    melon_stem:           Арбуз
+    milk_bucket:          Ведро молока
+    minecart:             Вагонетка
+    mob_spawner:          Спавнер
+    monster_egg:          Яйца призывания
+    monster_eggs:         Яйца призывания
+    mossy_cobblestone:    Замшелый булыжник
+    mushroom_soup:        Грибной суп
+    mycel:                Мицелий
+    nether_brick:         Адский кирпич
+    nether_brick_stairs:  Адские ступени
+    nether_fence:         Адский забор
+    nether_stalk:         Адский нарост
+    nether_warts:         Адский нарост
+    netherrack:           Адский камень
+    note_block:           Музыкальный блок
+    obsidian:             Обсидиан
+    painting:             Картина
+    paper:                Бумага
+    piston_base:          Поршень
+    piston_extension:     Поршень
+    piston_moving_piece:  Поршень
+    piston_sticky_base:   Липкий поршень
+    pork:                 Сырая свинина
+    portal:               Портал
+    potion:               Зелья
+    powered_minecart:     Вагонетка с двигателем
+    powered_rail:         Электрические рельсы
+    pumpkin:              Тыква
+    pumpkin_seeds:        Семена тыквы
+    pumpkin_stem:         Тыква
+    rails:                Рельсы
+    raw_beef:             Сырая говядина
+    raw_chicken:          Сырая курятина
+    raw_fish:             Сырая рыба
+    record_10:            Пластинка c418 - ward
+    record_11:            Пластинка c418 - 11
+    record_3:             Пластинка c418 - blocks
+    record_4:             Пластинка c418 - chirp
+    record_5:             Пластинка c418 - far
+    record_6:             Пластинка c418 - mall
+    record_7:             Пластинка c418 - mellohi
+    record_8:             Пластинка c418 - stal
+    record_9:             Пластинка c418 - strad
+    red_mushroom:         Красный гриб
+    red_rose:             Красная роза
+    redstone:             Красная пыль
+    redstone_lamp_off:    Лампа
+    redstone_lamp_on:     Лампа
+    redstone_ore:         Красная руда
+    redstone_torch_off:   Красный факел
+    redstone_torch_on:    Красный факел
+    redstone_wire:        Красная пыль
+    rotten_flesh:         Гнилая плоть
+    saddle:               Седло
+    sand:                 Песок
+    sandstone:            Песчаник
+    sapling:              Сажанцы
+    seeds:                Семена
+    shears:               Ножницы
+    sign:                 Табличка
+    sign_post:            Табличка
+    slime_ball:           Слизь
+    smooth_brick:         Кирпич
+    smooth_stairs:        Кирпичная лестница
+    snow:                 Снег
+    snow_ball:            Снежки
+    snow_block:           Снег
+    soil:                 Soil
+    soul_sand:            Soul Sand
+    speckled_melon:       Сверкающий ломтик арбуза
+    spider_eye:           Паучий глаз
+    sponge:               Губка
+    stationary_lava:      Лава
+    stationary_water:     Вода
+    step:                 Плитка
+    stick:                Палка
+    stone:                Камень
+    stone_axe:            Каменный топор
+    stone_button:         Кнопка
+    stone_hoe:            Каменная мотыга
+    stone_pickaxe:        Каменная кирка
+    stone_plate:          Нажимная плита
+    stone_spade:          Каменная лопата
+    stone_sword:          Каменный меч
+    storage_minecart:     Вагонетка с сундуком
+    string:               Нить
+    sugar:                Сахар
+    sugar_cane:           Тростник
+    sugar_cane_block:     Тростник
+    sulphur:              Порох
+    thin_glass:           Стеклянная панель
+    tnt:                  Динамит
+    torch:                Факел
+    trap_door:            Люк
+    vine:                 Лиана
+    wall_sign:            Табличка
+    watch:                Часы
+    water:                Вода
+    water_bucket:         Ведро воды
+    water_lily:           Кувшинка
+    web:                  Паутина
+    wheat:                Пшеница
+    wood:                 Дерево
+    wood_axe:             Деревянный топор
+    wood_door:            Деревянная дверь
+    wood_hoe:             Деревянная мотыга
+    wood_pickaxe:         Деревянная кирка
+    wood_plate:           Нажимная плита
+    wood_spade:           Деревянная лопата
+    wood_stairs:          Деревянная лестница
+    wood_sword:           Деревянный меч
+    wooden_door:          Деревянная дверь
+    wool:                 Шерсть
+    workbench:            Верстак
+    yellow_flower:        Желтый цветок
+    birch_wood_stairs:    Birch Wood Stairs
+    book_and_quill:       Book and Quill
+    cocoa:                Cocoa
+    emerald:              Emerald
+    emerald_block:        Block of Emerald
+    emerald_ore:          Emerald Ore
+    ender_chest:          Ender Chest
+    jungle_wood_stairs:   Jungle Wood Stairs
+    spruce_wood_stairs:   Spruce Wood Stairs
+    sandstone_stairs:     Sandstone Stairs
+    step:                 Step
+    tripwire:             Trip Wire
+    tripwire_hook:        Trip Wire Hook
+    written_book:         Written Book
+
+# End of File

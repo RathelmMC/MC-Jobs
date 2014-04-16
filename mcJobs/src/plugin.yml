@@ -1,0 +1,170 @@
+name: mcjobs
+main: com.dmgkz.mcjobs.McJobs
+version: 3.1.9
+author: RathelmMC
+website: http://dev.bukkit.org/server-mods/mcjobs/
+dev-url: http://dev.bukkit.org/server-mods/mcjobs/
+
+
+commands:
+    mcjobs:
+        aliases: [jobs]
+        description: Player commands for MC Jobs. Alias /jobs
+        usage: /<command> join, leave, list [job]
+    mcjobsadmin:
+        aliases: [jadm]
+        description: Allows Admin commands for MC Jobs. Alias /jadm
+        usage: /<command> add, remove, list, addlevel, addxp [player]
+
+permissions:
+    mcjobs.jobs.*:
+        description: Deprecated.  Use mcjobs.jobs.all instead.
+        default: false
+        children:
+            mcjobs.jobs.join: true
+            mcjobs.jobs.leave: true
+            mcjobs.jobs.list: true
+            mcjobs.jobs.info: true
+    mcjobs.jobs.all:
+        description: Allows the player to use all jobs user commands.
+        default: false
+        children:
+            mcjobs.jobs.join: true
+            mcjobs.jobs.leave: true
+            mcjobs.jobs.list: true
+            mcjobs.jobs.info: true
+    mcjobs.admin:
+        description: Allows the use of the Admins command /mcjobsadmin or /jadm.
+        default: op
+    mcjobs.admin.leavedefault:
+        description: Allows the player to leave default jobs.
+        default: op
+    mcjobs.admin.defaults:
+        description: Allows a player to use /jadm defaults to reload the default config file.
+        default: op
+    mcjobs.jobs.join:
+        description: Allows player to join jobs.
+        default: false
+    mcjobs.jobs.leave:
+        description: Allows player to leave a job.  Should be used in conjunction with join.
+        default: false
+    mcjobs.jobs.list:
+        description: Allows the player to use /mcjobs list.
+        default: false
+    mcjobs.jobs.info:
+        description: Allows player to use /mcjobs job_name for info.
+        default: false
+    mcjobs.jobsavail.*:
+        description: Deprecated.  Use mcjobs.jobsavail.all instead.
+        default: false
+        children:
+            mcjobs.jobsavail.digger: true
+            mcjobs.jobsavail.miner: true
+            mcjobs.jobsavail.builder: true
+            mcjobs.jobsavail.carpenter: true
+            mcjobs.jobsavail.soldier: true
+            mcjobs.jobsavail.woodsman: true
+            mcjobs.jobsavail.tinkerer: true
+            mcjobs.jobsavail.farmer: true
+            mcjobs.jobsavail.toolmaker: true
+            mcjobs.jobsavail.weaponsmith: true
+            mcjobs.jobsavail.armorer: true
+            mcjobs.jobsavail.fisherman: true
+            mcjobs.jobsavail.baker: true
+            mcjobs.jobsavail.alchemist: true
+            mcjobs.jobsavail.brewer: true
+            mcjobs.jobsavail.conjurer: true
+            mcjobs.jobsavail.enchanter: true
+            mcjobs.jobsavail.theurgist: true
+            mcjobs.jobsavail.taxes: true
+            mcjobs.jobsavail.bulldozer: true
+    mcjobs.jobsavail.all:
+        description: Allows the player to join all default jobs.
+        default: false
+        children:
+            mcjobs.jobsavail.digger: true
+            mcjobs.jobsavail.miner: true
+            mcjobs.jobsavail.builder: true
+            mcjobs.jobsavail.carpenter: true
+            mcjobs.jobsavail.soldier: true
+            mcjobs.jobsavail.woodsman: true
+            mcjobs.jobsavail.tinkerer: true
+            mcjobs.jobsavail.farmer: true
+            mcjobs.jobsavail.toolmaker: true
+            mcjobs.jobsavail.weaponsmith: true
+            mcjobs.jobsavail.armorer: true
+            mcjobs.jobsavail.fisherman: true
+            mcjobs.jobsavail.baker: true
+            mcjobs.jobsavail.alchemist: true
+            mcjobs.jobsavail.brewer: true
+            mcjobs.jobsavail.conjurer: true
+            mcjobs.jobsavail.enchanter: true
+            mcjobs.jobsavail.theurgist: true
+            mcjobs.jobsavail.taxes: true
+            mcjobs.jobsavail.bulldozer: true    
+    mcjobs.jobsavail.digger:
+        description: Allows joining of the digger job.
+        default: false
+    mcjobs.jobsavail.miner:
+        description: Allows joining of the miner job.
+        default: false
+    mcjobs.jobsavail.builder:
+        description: Allows joining of the builder job.
+        default: false
+    mcjobs.jobsavail.carpenter:
+        description: Allows joining of the carpenter job.
+        default: false
+    mcjobs.jobsavail.soldier:
+        description: Allows joining of the soldier job.
+        default: false
+    mcjobs.jobsavail.woodsman:
+        description: Allows joining of the woodsman job.
+        default: false
+    mcjobs.jobsavail.tinkerer:
+        description: Allows joining of the tinkerer job.
+        default: false
+    mcjobs.jobsavail.farmer:
+        description: Allows joining of the farmer job.
+        default: false
+    mcjobs.jobsavail.toolmaker:
+        description: Allows joining of the toolmaker job.
+        default: false
+    mcjobs.jobsavail.weaponsmith:
+        description: Allows joining of the weaponsmith job.
+        default: false
+    mcjobs.jobsavail.armorer:
+        description: Allows joining of the armorer job.
+        default: false
+    mcjobs.jobsavail.fisherman:
+        description: Allows joining of the fisherman job.
+        default: false
+    mcjobs.jobsavail.baker:
+        description: Allows joining of the baker job.
+        default: false
+    mcjobs.jobsavail.alchemist:
+        description: Allows joining of the alchemist job.
+        default: false
+    mcjobs.jobsavail.brewer:
+        description: Allows joining of the brewer job.
+        default: false
+    mcjobs.jobsavail.conjurer:
+        description: Allows joining of the conjurer job.
+        default: false
+    mcjobs.jobsavail.enchanter:
+        description: Allows joining of the enchanter job.
+        default: false
+    mcjobs.jobsavail.theurgist:
+        description: Allows joining of the theurgist job.
+        default: false        
+    mcjobs.jobsavail.taxes:
+        description: Allows joining the taxes job.
+        default: false
+    mcjobs.jobsavail.bulldozer:
+        description: Allows joining the bulldozer job.
+        default: false
+    mcjobs.world.all:
+        description: Allows xp and payment to all worlds if using multiWorld setup.
+        default: false
+    mcjobs.paycreative:
+        description: Pays a player even if they are in creative mode.
+        default: false

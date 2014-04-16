@@ -1,0 +1,690 @@
+jobscommand:
+    playeronly: "Peut seulement être effectué par un joueur!"
+    permission: "&6%p&c Vous n'avez pas la permission de faire cela!"
+    args: "&6%p&c Il y a trop d'arguments dans la commande!"
+    exist: "&cLe métier &6%j&c n'existe pas!"
+    rejoin: "&7Tu peux maintenant rejoindre le métier &6%j&7."
+    show: "&Affichage&7 &7des messages de paye pour le métier &6%j&7."
+    hide: "&cDissimulation&7 &7des messages de paye pour le métier &6%j&7."
+
+jobsnotify:
+    and: et
+    hours: heures
+    hour: heure
+    minutes: minutes
+    minute: minute
+    days: jours
+    day: jour
+    weeks: semaines
+    week: semaine
+    months: mois
+    month: mois
+    message: "Tes métiers t'on fait gagner &6%j&a points d'exp en &c%g&a ."
+    overpay: "&e%p&a, tu es épuisé et tu ne peux plus gagner quoi que ce soit avec &6MC Jobs&a pour quelque temps."
+
+jobsdisplay:
+    employed: "--   &cEmployé"
+    unemployed: "-- &9Inemployé"
+    default: "--    &3Défault"
+    basepay: Salaire de base
+    charge: FACTURER
+    pay: PAYER
+    level: NIVEAU
+    rank: RANG
+    exp: EXP
+    break: DÉTRUIRE
+    place: PLACER
+    defeat: ÉLIMINER
+    fishing: PÊCHER 
+    craft: FABRIQUER
+    repair: RÉPARER
+    enchant: ENCHANTER
+    potions: CONCOCTER
+    tier: TIER
+
+jobsjoin:
+    have: "Tu es déjà dans le métier &6%j&c!"
+    join: "%p a rejoins le métier &9%j&7."
+    toomany: "&6%p&c tu as trop de métiers. Pour quitter un métier :"
+    command: "/jobs leave [job]"
+    jobperm: "&6%p&7 Tu n'as pas la permission de joindre &9%j&7"
+    timer: "&7Tu ne peux pas joindre &6%j&7 avant &c%g&7"
+ 
+jobsleave:
+    quit: "Tu as quitté le métier &6%j&7."
+    donthave: "Tu n'as pas le métier &6%j&c."
+    leavedefault: "Tu ne peux pas quitter le métier &6%j&c car c'est un métier par défaut."
+
+jobslist:
+    available: "&e%p&2, voici la liste des métiers disponibles:"
+    jobsin: "Les métiers en &crouges&2 sont les métiers que tu possèdes déjà."
+    nojob: "Les métiers en &8gris foncés&2 ne sont pas disponibles pour toi."
+    defaultjob: "Les métiers en &3bleu pâles&2 sont les métiers par défaut."
+    specific: "Pour en savoir plus sur un métier spécifique: &e/jobs [job name]"    
+    jobs: "Métiers:"
+
+jobshelp:
+    page: PAGE
+    1:
+        line1: "&7   Bienvenue dans &3MC Jobs&7.  &3MC Jobs&7 est un mod utilisé pour"
+        line2: "&7gagner de l'argent en exécutant des activités variés dans le serveur"
+        line3: "&7parmi les métiers que tu peux obtenir."
+        line4: ""
+        line5: "&2   Pour commencer tu dois choisir un métier."
+        line6: "&2Tu peux voir quels métiers sont disponibles en écrivant &e/jobs list &2dans le chat."
+        line7: ""
+        line8: "&2Apprend en plus a propos de chaques métiers en écrivant dans le chat:"
+        line9: "&e/jobs [job_name]"
+        line10: ""
+        line11: "&e[job name] &2peut être n'importe quel job, par exemple &6Pelleteur&2."
+        line12: "La commande &e/jobs join &2 et &e/jobs leave &2sont expliqués sur la page suivante."
+    2:
+        line1: "&2Tu peux joindre un métier en écrivant cette commande:"
+        line2: "&e/jobs join [job name]"
+        line3: ""
+        line4: "&2Joindre un métier te fera gagner ou perdre de l'argent selon les réglages"
+        line5: "&2de salaire de tout les métiers.  Tu es seulement autorisé à avoir"
+        line6: "&2un maximum de &c%j&2 métier dans ce serveur."
+        line7: ""
+        line8: "&2Tu peux quitté un métier en écrivant &e/jobs leave [job name]"
+        line9: "&2Quand tu as atteint le maximum de métier dans le serveur,"
+        line10: "&2la seul façon de joindre un nouveau métier est de quitter un métier que tu as déjà."
+        line11: ""
+        line12: "&2Pour en apprendre plus sur la commande &e/jobs list&2 va a la page suivante."
+    3:
+        line1: "&2   La commande &e/jobs list est utile pour avoir"
+        line2: "&2de l'information a propos des métiers disponibles pour toi et ceux"
+        line3: "&2que tu ne peux pas avoir."
+        line4: ""
+        line5: "&2Les métiers en &crouges&2. sont les métiers que tu peux avoir"
+        line6: "&2Les métiers qui ne sont pas disponible pour toi sont en &8gris foncés&2."
+        line7: ""
+        line8: "&2Les métiers par Défaut sont en &3bleu pâles&2.  Il y a des métiers qui"
+        line9: "&2sont donnés automatiquement aux joueur qui ce connecte dans le serveur."
+        line10: "&2Les joueurs avec la permission &cmcjobs.admin.leavedefault&2 peuvent quitter les métiers par &3défaut&2."
+        line11: ""
+        line12: "&2Pour continuer la description de la commande &e/jobs list&2 va a la page suivante."
+    4:
+        line1: "&2Cette commande te dit combien tu as de métier sur le maximum de métier disponible."
+        line2: "&2Le nombre de métier que le serveur autorise est de &c%j&2 métiers maximum." 
+        line3: "" 
+        line4: "&2  La commande &e/jobs leave&2 fonctionne de la même façon que la commande &e/jobs join"
+        line5: "&2.  Tu peux seulement quitter un métier que tu as déjà rejoint."
+        line6: "&2Sa t'autorisera a prendre un nouveau métier en cas que"
+        line7: "&2tu changerais d'avis sur quoi que tu veux être."
+        line8: ""
+        line9: "&2Après avoir quitté un métier tu ne peux pas en rejoindre un nouveau avant"
+        line10: "&2le temps régler par le serveur.  Par défaut c'est 1 heure."
+        line11: ""
+        line12: "&2Pour en apprendre sur &e/jobs [job name] va a la page suivante"
+    5:
+        line1: "&2  La commande &e/jobs [job name]&2 donne aux joueurs toute"
+        line2: "&2l'information qu'ils ont besoin pour chaque métier."
+        line3: ""
+        line4: "&2La première ligne commence avec le &3nom du métier&2 et est suivit"
+        line5: "&2du statut &cemployé&2 ou si tu ne l'est pas"
+        line6: "&2dans ce cas il affichera &9inemployé&2."
+        line7: "&2Après il y a le &asalaire de base&2 du métier, ça t'affichera"
+        line8: "&2combien le &6TIER1&2 te payera pour une action&2."
+        line9: "&2La dernière information sur la prochaine page explique si"
+        line10: "&2le métier &apaye&2 ou &cfacture&2 le joueur pour faire des &eactions&2."
+        line11: ""
+        line12: "&2La prochaine page explique le reste de la commande &e/jobs [job]"
+    6:
+        line1: "&2Un métier peu a la fois te &apayer&2 et te &cfacturer&2.Comme exemple"
+        line2: "&2le métier &6mineur&2 &apaye&2 le joueur pour détruire des &7blocs de fer&2."
+        line3: "&2Cependant si tu place un &7bloc de fer&2 tu seras &cfacturer&2."
+        line4: ""
+        line5: "&2Si tu es présentement &cemployé&2 dans un métier ça t'affichera"
+        line6: "&2ton &6niveau&2 et le &6rang&2 que tu as dans ce job."
+        line7: "&2Les prochaines lignes sont celles de la &6description&2 des métiers."
+        line8: ""
+        line9: "&2Après ce sont les &eactions&2 que le métiers exige et quels blocs"
+        line10: "&2ou monstres sont nécessaire pour le métier."
+        line11: ""
+        line12: "&2La page suivante explique &el'actions&2 des métiers."
+    7:
+        line1: "&2Les actions sont: &6DÉTRUIRE&2, &6PLACER&2, &6TUER&2, &6CONSTRUIRE&2, &6RÉPARER&2,"
+        line2: "&6PECHER&2, &6CONCOCTER&2, et &6ENCHANTER&2."
+        line3: ""
+        line4: "&6DÉTRUIRE&2: est l'action de détruire des blocs comme la &7terre&2."
+        line5: "&6PLACER&2: est l'action de placer des blocs comme un &7escalier en pierre&2."
+        line6: "&6TUER&2: est l'action de tuer des monstres comme une &7araignée&2."
+        line7: "&6FABRIQUER&2: est l'action de fabriquer des objets comme une &7épée en bois&2."
+        line8: "&6REPARER&2: est l'action de réparer des objets comme une &7pelle en pierre&2."
+        line9: "&2Cela concerne aussi bien la réparation &6mcMMO&2 que la réparation vanilla."
+        line10: "&6PECHER&2: &aPaye&2 ou &cfacture&2 quand tu utilises une canne a pêche"
+        line11: "&2pour attraper un monstre ou un poisson."
+        line12: "&6CONCOCTER&2 et &6ENCHANTEMENT&2 sont sur l'autre page."
+    8:
+        line1: "&6CONCOCTER&2: Te &aPaye&2 ou te &cfacture&2 en utilisant un stand a potion pour créé des potions."
+        line2: ""
+        line3: "&6ENCHANTEMENT&2: Te &aPaye&2 ou te &cfacture&2 quand tu enchante une équipement."
+        line4: ""
+        line5: "&cLe language du plug-in en &eAnglais&c est fait par: &6RathelmMC"
+        line6: "&cLe language du plug-in en &eFrancais&c est fait par: &6Monezombie"
+        line7: "&cLe language du plug-in en &eAllemand&c est fait par: &6Non fait"
+        line8: "&cLe language du plug-in en &eNederlandse&c est fait par: &6Dreeass"
+        line9: "&cLe language du plug-in en &eRusse&c est fait par: &6Grim_joy"
+        line10: "&cLe language du plug-in en &eEspagnol&c est fait par: &6thedeadboy07"
+        line11: ""
+        line12: "&7Plus d'info sur:&6 http://dev.bukkit.org/server-mods/mcjobs/"
+    endofpage: "&7Continuer a la Page %g"
+    command: "&6/jobs help %g"
+    finish: "&7FIN DU DOCUMENT D'AIDE"
+    nohelp: "&7%g&c n'est pas une page d'aide!"
+
+admincommand:
+    permission: "&6%p&c Vous n'avez pas la permission de faire ça!"
+    failedreload: "&cÉchec du redémarrage du plug-in!"
+    succeedreload: "&6MC Jobs&c a été redémarré!"
+    defaults: "&7Défauts a été ajouté dans le fichier config.yml."
+    args: "&cTrop d'arguments pour &e/jadm&c.  Alors c'est la fin, on va tester un moyen ridiculement long."
+    exist: "&6%j&c n'existe pas!"
+
+adminadd:
+    args: "&cMauvais arguments:  &e/jadm add [player/group] [job_name]"
+    offline: "&6%p&c n'est pas un groupe existant ou n'est pas un &ejoueur&c connecté!"
+    novault: "&6%p&c n'est pas un joueur connu!"
+    hasjob: "&6%p&7 a déjà le métier &9%j&7."
+    empty: "&7Il n'y a pas de &ejoueur&7 connecté dans le groupe &6%p&7."
+    added: "&6%p&7 a été employé dans &9%j&7."
+    padded: "&6%p&2, tu as été employé dans le métier &9%j&2 par un admin du serveur."
+
+adminremove:
+    args: "&cMauvais arguments:  &e/jadm remove [player/group] [job_name]"
+    nojob: "&6%p&7 n'a pas le métier &9%j&7."
+    nodefault: "&6%p&c, tu n'as pas la permission de retiré les métiers par &3défaut&c!"
+    removed: "&6%p&7 a été renvoyé de &9%j&7."
+    premoved: "&6%p&2, tu as été renvoyé de &9%j&2 par un admin du serveur."
+
+
+adminlist:
+    args: "&cMauvais arguments:  &e/jadm list [player/group]"
+    playerlist: "&2%p&7: %g"
+    nojobs: "&2%p&c n'a pas de métier."
+    wrongpage: "&e%g n'est pas un numéro de page valide.  Utilisation de la page 1 a la place."
+
+pitch:
+    line0: "Ce serveur fonctionne avec MCJobs:"
+    line1: "&aPour voir les métiers disponibles: &e/jobs list"
+    line2: "&aPour joindre un métier: &e/jobs join [job_name]"
+    line3: "&aJouer, &2Gagner de l'argent&a, et avoir du plaisir!"
+    
+onadminlogin:
+    toolow: "&eLa grosseur du payement est trop petite pour un économie basé sur &6L'EXP&e.  Veuiller changer &2pay_scale&e a 'high' dans le fichier config.yml."
+    outofdate: "&eConfig.yml n'est pas a jour.  &6MC Jobs&e pourrait mal fonctionner si tu ne redémarre pas la configuration."
+
+experience:
+    level: "&eTu as gagné un niveau dans le métier &6%j&e."
+    reset: "&eTon niveau dans le métier &6%j&e a été réduit à &c0&e."
+    rank:  "&eYou are now rank &6%g&e in &6%j&e."
+    added_lvl: "&7You have given &6%p &a%g&7 levels in &6%j&7."
+    padded_lvl: "&7You have been given &a%g&7 levels in &6%j&7 by a system admin."
+    added_xp: "&7You have given &6%p &a%g&7 experience in &6%j&7."
+    padded_xp: "&7You have been given &a%g&7 experience in &6%j&7 by a system admin."
+    nojob: "&6%p&c doesn't have the &6%j&c job."
+
+payment:
+    pay: "&aLe métier &6%j&a t'a fait gagner &6%g&a %p."
+    payxp: "&aLe métier &6%j&a t'a fait gagner &6%g&a d'expérience."
+    charge: "&aLe métier &6%j&a t'a facturé &c%g&a %p."
+    chargexp: "&aLe métier &6%j&a t'a retiré &c%g&a d'expérience."
+    currency_single: Dollar
+    currency_plural: Dollars
+    
+spaces:
+    jobslist: 7
+    display: 2
+    displaytwo: 5
+    displaythree: 4
+    chargelen: 7
+    numhelp: 8
+
+entities:
+    blaze:        Blaze
+    cow:          Vache
+    cave_spider:  Araignée venimeuse
+    chicken:      Poule
+    creeper:      Creeper
+    dropped_item: Fish
+    ender_dragon: Ender Dragon
+    enderman:     Ender Man
+    ghast:        Ghast
+    giant:        Géant
+    iron_golem:   Golem de Fer
+    magma_cube:   Cube de Magma
+    mushroom_cow: Champimeuh
+    npc:          NPC
+    ocelot:       Ocelot
+    pig:          Cochon
+    pig_zombie:   Cochon Zombie
+    player:       Joueur
+    sheep:        Mouton
+    silverfish:   Poisson d'argent
+    skeleton:     Squelette
+    slime:        Slime
+    snowman:      Golem de neige
+    spider:       Araignée
+    squid:        Pieuvre
+    wolf:         Loup
+    zombie:       Zombie
+
+potions:
+    water:            Eau
+    awkward:          Étrange
+    thick:            Épaisse
+    mundane:          Banale
+    mundane_ext:      Banale prolongée
+    regen:            Régénération
+    regen_ext:        Régénération prolongée
+    regen_two:        Régénération II
+    regen_two_ext:    Régénération II prolongée
+    regen_spl:        Régénération volatile
+    regen_ext_spl:    Régénération volatile prolongée
+    regen_two_spl:    Régénération volatile II 
+    swift:            Vitesse
+    swift_ext:        Vitesse prolongée
+    swift_two:        Vitesse II
+    swift_two_ext:    Vitesse II prolongée
+    swift_spl:        Vitesse volatile
+    swift_ext_spl:    Vitesse volatile prolongée
+    swift_two_spl:    Vitesse volatile II 
+    fire_res:         Résistance au feu
+    fire_res_ext:     Résistance au feu prolongée
+    fire_res_spl:     Résistance au feu volatile
+    fire_res_ext_spl: Résistance au feu volatile prolongée
+    poison:           Poison
+    poison_ext:       Poison prolongée
+    poison_two:       Poison II
+    poison_two_ext:   Poison II prolongée
+    poison_spl:       Poison volatile
+    poison_ext_spl:   Poison volatile prolongée
+    poison_two_spl:   Poison volatile II
+    health:           Santé
+    health_two:       Santé II
+    health_spl:       Santé volatile
+    health_two_spl:   Santé volatile II 
+    weak:             Faiblesse
+    weak_ext:         Faiblesse prolongée
+    weak_two:         Faiblesse II
+    weak_spl:         Faiblesse volatile
+    weak_ext_spl:     Faiblesse volatile prolongée
+    weak_two_spl:     Faiblesse volatile II
+    strength:         Force
+    strength_ext:     Force porlongée
+    strength_two:     Force II
+    strength_two_ext: Force II prolongée
+    strength_spl:     Force volatile
+    strength_ext_spl: Force volatile prolongée
+    strength_two_spl: Force volatile II 
+    slow:             Lenteur
+    slow_ext:         Lenteur prolongée
+    slow_two:         Lenteur II
+    slow_spl:         Lenteur volatile
+    slow_ext_spl:     Lenteur volatile prolongée
+    slow_two_spl:     Lenteur volatile II 
+    harm:             Dégât
+    harm_two:         Dégât II
+    harm_spl:         Dégât volatile
+    harm_two_spl:     Dégât volatile II 
+    rev_fire_res:     Résistance au feu
+    rev_slow:         Lenteur
+    rev_health:       Santé
+    rev_harm:         Dégât
+    rev_weak:         Faiblesse
+
+enchant:
+    arrow_dmg_1:      Fleche Puissance I
+    arrow_dmg_2:      Flèche Puissance II
+    arrow_dmg_3:      Flèche Puissance III
+    arrow_dmg_4:      Flèche Puissance IV
+    arrow_dmg_5:      Flèche Puissance V
+    arrow_fire:       Flèche de feu
+    arrow_inf:        Flèche infinité
+    arrow_knock_1:    Flèche Repoussoir I
+    arrow_knock_2:    Flèche Repoussoir II
+    sharp_1:          Tranchant I
+    sharp_2:          Tranchant II
+    sharp_3:          Tranchant III
+    sharp_4:          Tranchant IV
+    sharp_5:          Tranchant V
+    boa_1:            Fléau des arthropodes I
+    boa_2:            Fléau des arthropodes II
+    boa_3:            Fléau des arthropodes III
+    boa_4:            Fléau des arthropodes IV
+    boa_5:            Fléau des arthropodes V
+    dmg_undead_1:     Châtiment I
+    dmg_undead_2:     Châtiment II
+    dmg_undead_3:     Châtiment III
+    dmg_undead_4:     Châtiment IV
+    dmg_undead_5:     Châtiment V
+    efficiency_1:     Efficacité I
+    efficiency_2:     Efficacité II
+    efficiency_3:     Efficacité III
+    efficiency_4:     Efficacité IV
+    efficiency_5:     Efficacité V
+    unbreaking_1:     Solidité I
+    unbreaking_2:     Solidité II
+    unbreaking_3:     Solidité III
+    unbreaking_4:     Solidité IV
+    unbreaking_5:     Solidité V
+    fire_aspect_1:    Aura de Feu I
+    fire_aspect_2:    Aura de Feu II
+    knockback_1:      Recul I
+    knockback_2:      Recul II
+    fortune_1:        Fortune I
+    fortune_2:        Fortune II
+    fortune_3:        Fortune III
+    looting_1:        Butin I
+    looting_2:        Butin II
+    looting_3:        Butin III
+    respiration_1:    Respiration I
+    respiration_2:    Respiration II
+    respiration_3:    Respiration III
+    protection_1:     Protection I
+    protection_2:     Protection II
+    protection_3:     Protection III
+    protection_4:     Protection IV
+    blast_prot_1:     Protection des explosions I
+    blast_prot_2:     Protection des explosions II
+    blast_prot_3:     Protection des explosions III
+    blast_prot_4:     Protection des explosions IV
+    feather_fall_1:   Chute amortie I
+    feather_fall_2:   Chute amortie II
+    feather_fall_3:   Chute amortie III
+    feather_fall_4:   Chute amortie IV
+    fire_prot_1:      Protection du feu I
+    fire_prot_2:      Protection du feu II
+    fire_prot_3:      Protection du feu III
+    fire_prot_4:      Protection du feu IV
+    proj_prot_1:      Protection des projectiles I
+    proj_prot_2:      Protection des projectiles II
+    proj_prot_3:      Protection des projectiles III
+    proj_prot_4:      Protection des projectiles IV
+    silk_touch:       Toucher de soie
+    aqua_affinity:    Aisance Aquatique
+    
+materials:
+    air:                  Air
+    apple:                Pomme
+    arrow:                Flèche
+    bed:                  Lit
+    bed_block:            Lit
+    bedrock:              Adminium
+    blaze_powder:         Poudre incendiaire
+    blaze_rod:            Baton de Feu
+    boat:                 Bateau
+    bone:                 Os
+    book:                 Livre
+    bookshelf:            Bibliothèque
+    bow:                  Arc
+    bowl:                 Bol
+    bread:                Pain
+    brewing_stand:        Alembique
+    brewing_stand_item:   Alembique
+    brick:                Brique
+    brick_stairs:         Escalier de Brique
+    brown_mushroom:       Champignon brun
+    bucket:               Sceau
+    burning_furnace:      Four
+    cactus:               Cactus
+    cake:                 Gâteau
+    cake_block:           Gâteau
+    cauldron:             Chaudron
+    cauldron_item:        Chaudron
+    chainmail_boots:      Bottes en Maille
+    chainmail_chestplate: Plastron en Maille
+    chainmail_helmet:     Casque en Maille
+    chainmail_leggings:   Pantalon en Maille
+    chest:                Coffre
+    clay:                 Argile
+    clay_ball:            Boule d'argile
+    clay_brick:           Brique d'argile
+    coal:                 Charbon
+    coal_ore:             Minerai de charbon
+    cobblestone:          Cobblestone
+    cobblestone_stairs:   Escalier en cobblestone
+    compass:              Boussole
+    cooked_beef:          Steak
+    cooked_chicken:       Poulet Roti
+    cooked_fish:          Poisson Cuit
+    cookie:               Biscuit
+    crops:                Récolte
+    dead_bush:            Arbuste mort
+    detector_rail:        Rails de détection
+    diamond:              Diamant
+    diamond_axe:          Hache de Diamant
+    diamond_block:        Bloc de Diamant
+    diamond_boots:        Bottes en Diamant
+    diamond_chestplate:   Plastron en Diamant
+    diamond_helmet:       Casque en Diamant
+    diamond_hoe:          Faux en Diamant
+    diamond_leggings:     Pantalon en Diamant
+    diamond_ore:          Minerai de diamant
+    diamond_pickaxe:      Pioche en Diamant
+    diamond_spade:        Pelle en Diamant
+    diamond_sword:        Epée en Diamant
+    diode:                Répéteur de redstone
+    diode_block_off:      Répéteur de redstone
+    diode_block_on:       Répéteur de redstone
+    dirt:                 Terre
+    dispenser:            Distributeur
+    double_step:          Double dalle
+    dragon_egg:           Oeuf de Dragon
+    egg:                  Oeuf
+    enchantment_table:    Table d'enchantement
+    ender_pearl:          Perle d'Enderman
+    ender_portal:         Portail de la Fin
+    ender_portal_frame:   Cadre de portail de la Fin
+    ender_stone:          Pierre de la Fin
+    exp_bottle:           Fiole d'enchantement
+    eye_of_ender:         Oeil Enderman
+    feather:              Plume
+    fence:                Barrière
+    fence_gate:           Portillon
+    fermented_spider_eye: Oeil araignée fermenté
+    fire:                 Feu
+    fireball:             Boule de feu
+    fishing_rod:          Canne à Pêche
+    flint:                Silex
+    flint_and_steel:      Briquet
+    furnace:              Four
+    ghast_tear:           Larme de Ghast
+    glass:                Verre
+    glass_bottle:         Fiole
+    glowing_redstone_ore: Minerai de Redstone
+    glowstone:            Roche lumineuse
+    glowstone_dust:       Poussière lumineuse
+    gold_axe:             Hache en Or
+    gold_block:           Bloc en or
+    gold_boots:           Bottes en Or
+    gold_chestplate:      Plastron en Or
+    gold_helmet:          Casque en Or
+    gold_hoe:             Faux en Or
+    gold_ingot:           Lingot d'Or
+    gold_leggings:        Pantalon en Or
+    gold_nugget:          Pépite en or
+    gold_ore:             Minerai en or
+    gold_pickaxe:         Pioche en Or
+    gold_record:          Record c418 - 13
+    gold_spade:           Pelle en Or
+    gold_sword:           Epée en Or
+    golden_apple:         Pomme en Or
+    grass:                Terre
+    gravel:               Gravier
+    green_record:         Record c418 - cat
+    grilled_pork:         Côte de Porc Cuit
+    huge_mushroom_1:      Champignon géant rouge
+    huge_mushroom_2:      Champignon géant marron
+    ice:                  Glace
+    ink_sack:             Sac d Encre
+    iron_axe:             Hache en Fer
+    iron_block:           Bloc de fer
+    iron_boots:           Bottes en Fer
+    iron_chestplate:      Plastron en Fer
+    iron_door:            Porte en métal
+    iron_door_block:      Porte en métal
+    iron_fence:           Barrière de fer
+    iron_helmet:          Casque en Fer
+    iron_hoe:             Faux en Fer
+    iron_ingot:           Lingot de Fer
+    iron_leggings:        Pantalon en Fer
+    iron_ore:             Minerai de Fer
+    iron_pickaxe:         Pioche en Fer
+    iron_spade:           Pelle en Fer
+    iron_sword:           Epée en Fer
+    jack_o_lantern:       Citrouille Lumineuse
+    jukebox:              Juke-box
+    ladder:               Echelle
+    lapis_block:          Bloc de Lapis Lazuli
+    lapis_ore:            Minerai de Lapis Lazuli
+    lava:                 Lave
+    lava_bucket:          Sceau de Lave
+    leather:              Cuir
+    leather_boots:        Bottes en Cuir
+    leather_chestplate:   Plastron en Cuir
+    leather_helmet:       Casque en Cuir
+    leather_leggings:     Pantalon en Cuir
+    leaves:               Feuilles
+    lever:                Levier
+    locked_chest:         Coffre verouiller
+    log:                  Jeune arbre
+    long_grass:           Herbe haute
+    magma_cream:          Boule de magma
+    map:                  Carte
+    melon:                Morceau de Pasthèque
+    melon_block:          Pastèque
+    melon_seeds:          Graines de Pasthèque
+    melon_stem:           Tige de Pastèque
+    milk_bucket:          Seau de Lait
+    minecart:             Wagon
+    mob_spawner:          Générateur de monstres
+    monster_egg:          Oeufs de spawn
+    monster_eggs:         Bloc de poisson d'argent
+    mossy_cobblestone:    Mossu Cobblestone
+    mushroom_soup:        Soupe de Champignon
+    mycel:                Mycélium
+    nether_brick:         Brique du nether
+    nether_brick_stairs:  Escalier en brique du Nether
+    nether_fence:         Barrière du Nether
+    nether_stalk:         Wart du Nether
+    nether_warts:         Wart du Nether
+    netherrack:           Pierre sanguine
+    note_block:           Boite à musique
+    obsidian:             Obsidienne
+    painting:             Peintures
+    paper:                Papier
+    piston_base:          Piston
+    piston_extension:     Piston
+    piston_moving_piece:  Piston
+    piston_sticky_base:   Piston collant
+    pork:                 Côte de Porc
+    portal:               Portail
+    potion:               Potion
+    powered_minecart:     Locomotive
+    powered_rail:         Rail électrique
+    pumpkin:              Citrouille
+    pumpkin_seeds:        Graines de Citrouille
+    pumpkin_stem:         Tige de Citrouille
+    rails:                Rails
+    raw_beef:             Boeuf cru
+    raw_chicken:          Poulet cru
+    raw_fish:             Poisson Cru
+    record_10:            Record c418 - ward
+    record_11:            Record c418 - 11
+    record_3:             Record c418 - blocks
+    record_4:             Record c418 - chirp
+    record_5:             Record c418 - far
+    record_6:             Record c418 - mall
+    record_7:             Record c418 - mellohi
+    record_8:             Record c418 - stal
+    record_9:             Record c418 - strad
+    red_mushroom:         Champignon rouge
+    red_rose:             Rose
+    redstone:             Redstone
+    redstone_lamp_off:    Lampe Redstone
+    redstone_lamp_on:     Lampe Redstone
+    redstone_ore:         Minerai de Redstone
+    redstone_torch_off:   Torche Redstone
+    redstone_torch_on:    Torche Redstone
+    redstone_wire:        Cable de RedStone
+    rotten_flesh:         Chair pourrit
+    saddle:               Selle
+    sand:                 Sable
+    sandstone:            Roche de sable
+    sapling:              Jeune arbre
+    seeds:                Blé
+    shears:               Ciseau
+    sign:                 Panneau
+    sign_post:            Panneau
+    slime_ball:           Boule de Slime
+    smooth_brick:         Pierre taillées
+    smooth_stairs:        Escalier en pierres taillées
+    snow:                 Neige
+    snow_ball:            Boule de neige
+    snow_block:           Bloc de neige
+    soil:                 Terre labouré
+    soul_sand:            Sable de l'enfer
+    speckled_melon:       Pastèque scintillante
+    spider_eye:           Oeil d'araignée
+    sponge:               Éponge
+    stationary_lava:      Lave
+    stationary_water:     Eau
+    step:                 Dalle
+    stick:                Baton
+    stone:                Pierre
+    stone_axe:            Hache en Pierre
+    stone_button:         Bouton en pierre
+    stone_hoe:            Faux en Pierre
+    stone_pickaxe:        Pioche en Pierre
+    stone_plate:          Plaque pression pierre
+    stone_spade:          Pelle en Pierre
+    stone_sword:          Epée en Pierre
+    storage_minecart:     Wagon de stockage
+    string:               Ficelle
+    sugar:                Sucre
+    sugar_cane:           Canne a Sucre
+    sugar_cane_block:     Canne a Sucre
+    sulphur:              Poudre a Canon
+    thin_glass:           Vitre
+    tnt:                  TNT
+    torch:                Torche
+    trap_door:            Trappe
+    vine:                 Plante Grimpante
+    wall_sign:            Panneau
+    watch:                Montre
+    water:                Eau
+    water_bucket:         Sceau d'eau
+    water_lily:           Nénuphar
+    web:                  Toile d'araignée
+    wheat:                Blé
+    wood:                 Bois
+    wood_axe:             Hache en Bois
+    wood_door:            Porte en bois
+    wood_hoe:             Faux en Bois
+    wood_pickaxe:         Pioche en Bois
+    wood_plate:           Plaque pression bois
+    wood_spade:           Pelle en bois
+    wood_stairs:          Escalier en bois
+    wood_sword:           Epée en Bois
+    wooden_door:          Porte en bois
+    wool:                 Laine
+    workbench:            Table de travail
+    yellow_flower:        Marguerite
+    birch_wood_stairs:    Escalier en bois de bouleau
+    book_and_quill:       Livre vierge
+    cocoa:                Fèves de cacao
+    emerald:              Émeraude
+    emerald_block:        Bloc d'émeraude
+    emerald_ore:          Minerai d'émeraude
+    ender_chest:          Coffre du Néant
+    jungle_wood_stairs:   Escalier en bois de jungle
+    spruce_wood_stairs:   Escalier en bois d'épicéa
+    sandstone_stairs:     Sandstone Stairs
+    step:                 Marche
+    tripwire:             Fil de déclenchement
+    tripwire_hook:        Crochet
+    written_book:         Livre édité
+
+# End of File
