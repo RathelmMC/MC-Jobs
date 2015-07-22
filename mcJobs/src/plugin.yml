@@ -4,7 +4,8 @@ version: 3.1.9
 author: RathelmMC
 website: http://dev.bukkit.org/server-mods/mcjobs/
 dev-url: http://dev.bukkit.org/server-mods/mcjobs/
-
+depend: [Vault]
+softdepend: [mcMMO,WorldGuard,LogBlock]
 
 commands:
     mcjobs:
